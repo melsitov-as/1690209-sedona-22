@@ -1,0 +1,220 @@
+.about {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 31px;
+  background-color: @basic-white;
+  background: linear-gradient(175deg, transparent 252px, @special-blue 253px),
+      linear-gradient(185deg, transparent 252px, @special-blue 253px);
+}
+
+.about__container {
+  width: 282px;
+  margin: 0 auto;
+}
+
+.about__title {
+  margin: 0 0 29px 0;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-black;
+}
+
+.about__reasons {
+  margin: 0 0 84px 0;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.01px;
+  color: @special-black;
+}
+
+.reasons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reasons-item:nth-child(1) {
+  background: url("../../img/sedona-photo-1.jpg") 0 155px no-repeat;
+}
+
+.reasons-item__title {
+  margin: 0 0 12px 0;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-white;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0 0 32px;
+  list-style: none;
+  background-color: @basic-white;
+}
+
+.reasons-item__num {
+  position: relative;
+  margin: 0 0 17px 0;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-white;
+}
+
+.reasons-item__description {
+  margin: 0;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-white;
+  letter-spacing: 0.1px;
+}
+
+.reasons-item:nth-child(1)  .reasons-item__description {
+  margin-bottom: 297px;
+}
+
+.reasons-item:nth-child(2) {
+  padding-top: 40px;
+  padding-bottom: 294px;
+  background: url("../../img/sedona-photo-2.jpg") 0 192px no-repeat;
+}
+
+.reasons-item:nth-child(3),
+.reasons-item:nth-child(4),
+.reasons-item:nth-child(5) {
+  position: relative;
+  background-color: @special-white;
+}
+
+.reasons-item:nth-child(3) {
+  padding-top: 27px;
+  padding-bottom: 30px;
+}
+
+.reasons-item:nth-child(4) {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.reasons-item:nth-child(5) {
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+
+.reasons-item:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: @special-grey;
+  top: 166px;
+  left: 21px;
+}
+
+.reasons-item:nth-child(4)::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: @special-grey;
+  top: 166px;
+  left: 21px;
+}
+
+.reasons-item:nth-child(3) .reasons-item__title,
+.reasons-item:nth-child(3) .reasons-item__num,
+.reasons-item:nth-child(3) .reasons-item__description,
+.reasons-item:nth-child(4) .reasons-item__title,
+.reasons-item:nth-child(4) .reasons-item__num,
+.reasons-item:nth-child(4) .reasons-item__description,
+.reasons-item:nth-child(5) .reasons-item__title,
+.reasons-item:nth-child(5) .reasons-item__num,
+.reasons-item:nth-child(5) .reasons-item__description {
+  color: @basic-black;
+}
+
+
+
+.advantages-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 24px;
+}
+
+.advantages-item:nth-child(1) {
+  margin-bottom: 14px;
+}
+
+.advantages-item:nth-child(2) {
+  padding-top: 0;
+  margin-bottom: 14px;
+}
+
+.advantages-item:nth-child(3) {
+  padding-top: 0;
+}
+
+.advantages-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 21px;
+}
+
+.avanvantages-title {
+  margin: 12px 0 0 10px;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @basic-black;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.advantages-description {
+  margin: 14px 0 0 69px;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: @basic-black;
+  letter-spacing: 0.1px;
+}
