@@ -1,0 +1,85 @@
+.invitation {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 34px;
+  padding-bottom: 400px;
+  background: url("../../img/map-mobile.jpg") 0px 287px no-repeat;
+}
+
+.invitation::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  top: 449px;
+  left: 147px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: @special-blue;
+  border: 5px solid @basic-white;
+
+}
+
+.invitation__container {
+  width: 282px;
+  margin: 0 auto;
+}
+
+.invitation__title {
+  margin: 0 0 22px 0;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.invitation__description {
+  margin: 0 0 27px 0;
+  padding: 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+}
+
+.invitation__search-button {
+  display: block;
+  width: 282px;
+  background-color: @special-blue;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  text-decoration: none;
+}
+
+.invitation__search-button:hover {
+  background-color: @special-dark-blue;
+}
+
+.invitation__search-button:active .invitation__search-button-text {
+  opacity: 0.3;
+}
+
+.invitation__search-button:disabled {
+  background-color: @grey-disabled;
+}
+
+.invitation__search-button-text {
+  display: block;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @basic-white;
+}
