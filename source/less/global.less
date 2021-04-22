@@ -15,9 +15,36 @@
 @transparent-black: rgba(0, 0, 0, 0.6);
 @transparent-black-2: rgba(0, 0, 0, 0.25);
 @transparent-black-3: rgba(0, 0, 0, 0.3);
+@transparent-black-4: rgba(0, 0, 0, 0.1);
 
 @ptsans: "PT Sans";
 @ptssans-bold: "PT Sans Bold";
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: @input-grey;
+  }
+}
+
+.page-shadow-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 5px 5px 5px @transparent-black-4;
+  }
+}
 
 .visually-hidden {
   position: absolute;
