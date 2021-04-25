@@ -3,8 +3,23 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 34px;
-  padding-bottom: 400px;
-  background: url("../../img/map-mobile.jpg") 0px 287px no-repeat;
+  padding-bottom: 396px;
+  background: url("../../img/map-mobile.jpg") 0 287px no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 56px;
+    background: url("../../img/map-tablet.jpg") 0 318px no-repeat;
+    padding-bottom: 410px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background: url("../../img/map-desktop.jpg") 0 331px no-repeat,
+      @basic-white;
+    padding-bottom: 419px;
+  }
 }
 
 .invitation::after {
@@ -19,11 +34,24 @@
   background-color: @special-blue;
   border: 5px solid @basic-white;
 
+  @media (min-width: @tablet-width) {
+    top: 482px;
+    left: 371px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 494px;
+    left: 586px;
+  }
 }
 
 .invitation__container {
   width: 282px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 700px;
+  }
 }
 
 .invitation__title {
@@ -36,6 +64,12 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0 0 33px 0;
+  }
 }
 
 .invitation__description {
@@ -49,6 +83,22 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.invitation__description-br-1 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .invitation__search-button {
@@ -58,6 +108,12 @@
   padding-top: 16px;
   padding-bottom: 18px;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
 }
 
 .invitation__search-button:hover {

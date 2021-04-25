@@ -2,18 +2,41 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 31px;
-  background-color: @basic-white;
-  background: linear-gradient(175deg, transparent 252px, @special-blue 253px),
-      linear-gradient(185deg, transparent 252px, @special-blue 253px);
+  background-image: linear-gradient(175deg, transparent 252px, @special-blue 253px),
+    linear-gradient(185deg, transparent 252px, @special-blue 253px);
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 24px 0 0 0;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: repeat(2, minmax(50px, auto));
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: @basic-white;
+  }
 }
 
 .about__container {
-  width: 282px;
+  width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 700px;
+    grid-column: ~"1/4";
+    grid-row: ~"1/1";
+    background-color: @basic-white;
+  }
 }
 
 .about__title {
-  margin: 0 0 29px 0;
+  margin: 0 0 30px 0;
   padding: 0;
   font-family: @ptsans;
   font-style: normal;
@@ -23,6 +46,23 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.about-title__br-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.about__reasons-br-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .about__reasons {
@@ -31,26 +71,220 @@
   font-family: @ptsans;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 27px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.01px;
   color: @special-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .reasons-list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    grid-column: ~"1/4";
+    grid-row: ~"2/4";
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .reasons-item:nth-child(1) {
-  background: url("../../img/sedona-photo-1.jpg") 0 155px no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin-bottom: 21px;
+  }
+}
+
+.reasons-item:nth-child(1) .reasons-item__text-wrapper {
+  width: 320px;
+  padding: 0 0 35px 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    background-color: @special-blue;
+    width: 256px;
+    padding-top: 41px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-top: 46px;
+    padding-bottom: 54px;
+  }
+}
+
+.reasons-item:nth-child(1) .reasons-item__img-wrapper {
+  background: url("../../img/sedona-photo-1-mobile.jpg") no-repeat;
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    background: url("../../img/sedona-photo-1-tablet.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    background: url("../../img/sedona-photo-1.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.reasons-item:nth-child(2) {
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.reasons-item:nth-child(2) .reasons-item__text-wrapper {
+  width: 320px;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @special-blue;
+    width: 256px;
+    padding-top: 44px;
+    padding-bottom: 40px;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-top: 51px;
+    padding-bottom: 54px;
+  }
+}
+
+.reasons-item:nth-child(2) .reasons-item__img-wrapper {
+  width: 320px;
+  height: 260px;
+  background: url("../../img/sedona-photo-2-mobile.jpg") no-repeat;
+
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    background: url("../../img/sedona-photo-2-tablet.jpg") no-repeat;
+    background-size: 100% 100%;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    background: url("../../img/sedona-photo-2.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.reasons-item__description-br-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons-item__description-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons-item__description-br-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.advantages-description__br-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages-description__br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages-description__br-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .reasons-item__title {
-  margin: 0 0 12px 0;
+  margin: 0 0 12px;
   padding: 0;
   font-family: @ptsans;
   font-style: normal;
@@ -60,13 +294,36 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 11px;
+  }
 }
 
-.advantages-list {
-  margin: 0;
-  padding: 0 0 32px;
-  list-style: none;
-  background-color: @basic-white;
+.reasons-item__title-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons-item__title-br-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .reasons-item__num {
@@ -81,6 +338,14 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .reasons-item__description {
@@ -97,16 +362,6 @@
   letter-spacing: 0.1px;
 }
 
-.reasons-item:nth-child(1)  .reasons-item__description {
-  margin-bottom: 297px;
-}
-
-.reasons-item:nth-child(2) {
-  padding-top: 40px;
-  padding-bottom: 294px;
-  background: url("../../img/sedona-photo-2.jpg") 0 192px no-repeat;
-}
-
 .reasons-item:nth-child(3),
 .reasons-item:nth-child(4),
 .reasons-item:nth-child(5) {
@@ -117,16 +372,45 @@
 .reasons-item:nth-child(3) {
   padding-top: 27px;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 64px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-bottom: 62px;
+  }
 }
 
 .reasons-item:nth-child(4) {
   padding-top: 20px;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .reasons-item:nth-child(5) {
   padding-top: 20px;
   padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .reasons-item:nth-child(3)::after {
@@ -137,6 +421,10 @@
   background-color: @special-grey;
   top: 166px;
   left: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .reasons-item:nth-child(4)::after {
@@ -147,6 +435,10 @@
   background-color: @special-grey;
   top: 166px;
   left: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .reasons-item:nth-child(3) .reasons-item__title,
@@ -161,26 +453,69 @@
   color: @basic-black;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0 0 32px;
+  list-style: none;
+  background-color: @basic-white;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 33px 0 45px 0;
+  }
+}
 
 .advantages-item {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .advantages-item:nth-child(1) {
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .advantages-item:nth-child(2) {
   padding-top: 0;
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .advantages-item:nth-child(3) {
   padding-top: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .advantages-icon {
@@ -190,9 +525,53 @@
   justify-content: center;
   align-items: center;
   margin-left: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    height: 76px;
+    margin: 0;
+  }
 }
 
-.avanvantages-title {
+.advantages-item:nth-child(1) .advantages-icon {
+  @media (min-width: @tablet-width) {
+    margin-left: 90px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 158px;
+    margin-bottom: 13px;
+  }
+}
+
+.advantages-item:nth-child(2) .advantages-icon {
+  @media (min-width: @tablet-width) {
+    margin-left: 90px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 159px;
+    margin-bottom: 13px;
+  }
+}
+
+.advantages-item:nth-child(3) .advantages-icon {
+  @media (min-width: @tablet-width) {
+    margin-left: 90px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 11px;
+  }
+}
+
+.advantages-title {
   margin: 12px 0 0 10px;
   padding: 0;
   font-family: @ptsans;
@@ -204,6 +583,44 @@
   color: @basic-black;
   margin-top: 12px;
   margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.advantages-item:nth-child(1) .advantages-title {
+  @media (min-width: @tablet-width) {
+    margin-left: 95px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 165px;
+  }
+}
+
+.advantages-item:nth-child(2) .advantages-title {
+  @media (min-width: @tablet-width) {
+    margin-left: 78px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 147px;
+  }
+}
+
+.advantages-item:nth-child(3) .advantages-title {
+  @media (min-width: @tablet-width) {
+    margin-left: 109px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 181px;
+  }
 }
 
 .advantages-description {
@@ -217,4 +634,11 @@
   text-transform: uppercase;
   color: @basic-black;
   letter-spacing: 0.1px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
