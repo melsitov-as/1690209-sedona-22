@@ -14,298 +14,323 @@
 </head>
 
 <body class="page">
-  <header class="page-header page-header--form">
-    <div class="page-header__container">
-      <div class="page-header__logo-wrapper page-header__logo-wrapper--form">
-        <a class="page-header__logo-link" href="index.html" aria-label="Логотип Седона">
-          <img class="page-header__logo-link-img" src="img/sedona-logotype.png" alt="Логотип Седона" width="102"
-            height="84">
-        </a>
-        <button class="page-header__hamburger-button">
-          <img class="page-header__hamburger-button-icon" src="img/hamburger-icon.svg" alt="Открыть меню" width="23"
-            height="22">
-        </button>
-      </div>
-      <nav class="user-nav">
-        <button class="user-nav__close-button">
-          <img class="user-nav__close-button-icon" src="img/close-button-icon.svg" alt="Закрыть меню" width="22"
-            height="22">
-        </button>
-        <div class="user-nav__item">
-          <a class="user-nav__link" href="index.html">ГЛАВНАЯ</a>
+  <div class="page-wrapper">
+    <div class="page-shadow-wrapper">
+      <header class="page-header page-header--form">
+        <div class="page-header__container page-header__container--nav page-header__container--nav-form">
+          <div class="page-header__logo-wrapper page-header__logo-wrapper--form">
+            <a class="page-header__logo-link" href="index.html" aria-label="Логотип Седона">
+              <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона" width="102"
+                height="84">
+              <img class="page-header__logo-tablet-img" src="img/logotype-tablet.png" alt="Логотип Седона" width="102"
+                height="84">
+              <img class="page-header__logo-desktop-img" src="img/logotype-desktop.png" alt="Логотип Седона" width="102"
+                height="84">
+              <img class="page-header__logo-desktop-background" src="img/logotype-desktop-background.png"
+                alt="Логотип Седона" width="187" height="97">
+            </a>
+            <button class="page-header__hamburger-button">
+              <img class="page-header__hamburger-button-icon" src="img/hamburger-icon.svg" alt="Открыть меню" width="23"
+                height="22">
+            </button>
+          </div>
+          <nav class="user-nav user-nav--form">
+            <button class="user-nav__close-button">
+              <img class="user-nav__close-button-icon" src="img/close-button-icon.svg" alt="Закрыть меню" width="22"
+                height="22">
+            </button>
+            <div class="user-nav__item">
+              <a class="user-nav__link" href="index.html">ГЛАВНАЯ</a>
+            </div>
+            <div class="user-nav__item">
+              <a class="user-nav__link" href="#">ФОТО И ВИДЕО</a>
+            </div>
+            <div class="user-nav__item">
+              <a class="user-nav__link" href="#">ФОРМА ОТЗЫВА</a>
+            </div>
+            <div class="user-nav__item">
+              <a class="user-nav__link" href="#">HTML ACADEMY</a>
+            </div>
+          </nav>
         </div>
-        <div class="user-nav__item">
-          <a class="user-nav__link" href="#">ФОТО И ВИДЕО</a>
+        <div class="page-header__container page-header__container--desktop page-header__container--desktop-form">
+          <img class="page-header__sedona-text-logo page-header__sedona-text-logo--form" src="img/sedona-text-logo.png"
+            alt="Sedona" width="282" height="49">
         </div>
-        <div class="user-nav__item">
-          <a class="user-nav__link" href="#">ФОРМА ОТЗЫВА</a>
-        </div>
-        <div class="user-nav__item">
-          <a class="user-nav__link" href="#">HTML ACADEMY</a>
-        </div>
-      </nav>
-      <img class="page-header__sedona-text-logo page-header__sedona-text-logo--form" src="img/sedona-text-logo.png"
-        alt="Sedona" width="282" height="49">
-    </div>
-  </header>
+      </header>
 
-  <main class="page-main">
-    <section class="review">
-      <h2 class="visually-hidden">Отзыв</h2>
-      <div class="review__container">
-        <h1 class="review__title">Оставьте свой отзыв</h1>
-        <p class="review__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-          вами достопримечательностях</p>
-      </div>
-    </section>
-    <section class="form">
-      <h2 class="visually-hidden">Форма</h2>
-      <form class="form__wrapper" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__item">
-          <legend class="visually-hidden">Данные пользователя</legend>
-          <div class="form__container">
-            <h2 class="form__item-title">ПРЕДСТАВЬТЕСЬ:</h2>
-            <ul class="form__item-user-data-list">
-              <li class="form__item-user-data-item">
-                <label class="form__item-label" for="name">ИМЯ*:</label>
-                <input class="form__item-input" type="text" id="name" name="name" placeholder="Петр">
-              </li>
-              <li class="form__item-user-data-item">
-                <label class="form__item-label" for="surname">ФАМИЛИЯ*:</label>
-                <input class="form__item-input" type="text" id="surname" name="surname" placeholder="Иванов">
-              </li>
-              <li class="form__item-user-data-item">
-                <label class="form__item-label" for="patronymic">ОТЧЕСТВО*:</label>
-                <input class="form__item-input" type="text" id="patronymic" name="patronymic"
-                  placeholder="Александрович">
-              </li>
-            </ul>
+      <main class="page-main">
+        <section class="review">
+          <h2 class="visually-hidden">Отзыв</h2>
+          <div class="review__container">
+            <h1 class="review__title">Оставьте свой отзыв</h1>
+            <p class="review__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br
+                class="review__description-br-table"> а также о посещенных
+              вами достопримечательностях</p>
           </div>
-        </fieldset>
-        <fieldset class="form__item form__item--contacts">
-          <legend class="visually-hidden">Контактная информация</legend>
-          <div class="form__container">
-            <h2 class="form__item-title form__item-title--contacts">Контактная информация:</h2>
-            <ul class="form__user-contacts-list">
-              <li class="form__user-contacts-item">
-                <label class="form__item-label form__item-label--phone" for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-                <input class="form__item-input form__item-input--phone" type="text" id="phone" name="phone"
-                  placeholder="Введите телефон">
-                <div class="form__user-contacts-icon">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
-                      fill="#010101" />
-                  </svg>
-                </div>
+        </section>
+        <section class="form">
+          <h2 class="visually-hidden">Форма</h2>
+          <form class="form__wrapper" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="form__item form__item--user-data">
+              <legend class="visually-hidden">Данные пользователя</legend>
+              <div class="form__container">
+                <h2 class="form__item-title form__title--user-data">ПРЕДСТАВЬТЕСЬ:</h2>
+                <ul class="form__item-user-data-list">
+                  <li class="form__item-user-data-item">
+                    <label class="form__item-label" for="name">ИМЯ*:</label>
+                    <input class="form__item-input" type="text" id="name" name="name" placeholder="Петр">
+                  </li>
+                  <li class="form__item-user-data-item">
+                    <label class="form__item-label" for="surname">ФАМИЛИЯ*:</label>
+                    <input class="form__item-input" type="text" id="surname" name="surname" placeholder="Иванов">
+                  </li>
+                  <li class="form__item-user-data-item">
+                    <label class="form__item-label" for="patronymic">ОТЧЕСТВО*:</label>
+                    <input class="form__item-input" type="text" id="patronymic" name="patronymic"
+                      placeholder="Александрович">
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="form__item form__item--contacts">
+              <legend class="visually-hidden">Контактная информация</legend>
+              <div class="form__container">
+                <h2 class="form__item-title form__item-title--contacts">Контактная информация:</h2>
+                <ul class="form__user-contacts-list">
+                  <li class="form__user-contacts-item">
+                    <label class="form__item-label form__item-label--phone" for="phone"><span
+                        class="phone-text">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
+                    <input class="form__item-input form__item-input--phone" type="text" id="phone" name="phone"
+                      placeholder="Введите телефон">
+                    <div class="form__user-contacts-icon">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+                          fill="#010101" />
+                      </svg>
+                    </div>
 
-              </li>
-              <li class="form__user-contacts-item">
-                <label class="form__item-label form__item-label--email" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-                <input class="form__item-input form__item-input--email" type="text" id="email" name="email"
-                  placeholder="Введите e-mail">
-                <div class="form__user-contacts-icon">
-                  <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
-                      fill="black" />
-                  </svg>
-                </div>
-              </li>
-            </ul>
+                  </li>
+                  <li class="form__user-contacts-item">
+                    <label class="form__item-label form__item-label--email" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+                    <input class="form__item-input form__item-input--email" type="text" id="email" name="email"
+                      placeholder="Введите e-mail">
+                    <div class="form__user-contacts-icon">
+                      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+                          fill="black" />
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="form__item form__item--impression">
+              <legend class="visually-hidden">Впечатление</legend>
+              <div class="form__container">
+                <h2 class="form__item-title form__item-title--impression">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
+                <ul class="impression-list">
+                  <li class="impression-item">
+                    <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
+                      id="positive" checked>
+                    <label class="impression-item-label" for="positive">
+                      <div class="radio-icon">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
+                            fill="#333333" stroke="#333333" stroke-width="3" />
+                        </svg>
+                      </div>
+                      <span class="impression-item-label-text">Скорее положительное</span>
+                    </label>
+                  </li>
+                  <li class="impression-item">
+                    <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
+                      id="negative">
+                    <label class="impression-item-label" for="negative">
+                      <div class="radio-icon">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
+                            fill="#333333" stroke="#333333" stroke-width="3" />
+                        </svg>
+                      </div>
+                      <span class="impression-item-label-text">Скорее отрицательное</span>
+                    </label>
+                  </li>
+                  <li class="impression-item">
+                    <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
+                      id="difficult-to-answer">
+                    <label class="impression-item-label" for="difficult-to-answer">
+                      <div class="radio-icon">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
+                            fill="#333333" stroke="#333333" stroke-width="3" />
+                        </svg>
+                      </div>
+                      <span class="impression-item-label-text">Затрудняюсь ответить</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="form__item form__item--attractions">
+              <legend class="visually-hidden">Посещенные достопримечательности</legend>
+              <div class="form__container">
+                <h2 class="form__item-title form__item-title--attractions">ПОСЕЩЕННЫЕ <br
+                    class="form__item-title-br-tablet">ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
+                <ul class="attractions-list">
+                  <li class="attractions-item">
+                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="bridge"
+                      id="bridge" checked>
+                    <label class="attractions-item__label" for="bridge">
+                      <div class="checkbox-icon">
+                        <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
+                            fill="black" />
+                        </svg>
+                      </div>
+                      <span class="attractions-item__label-text">Мост Дьявола</span>
+                    </label>
+                  </li>
+                  <li class="attractions-item">
+                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="mountain"
+                      id="mountain" checked>
+                    <label class="attractions-item__label" for="mountain">
+                      <div class="checkbox-icon">
+                        <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
+                            fill="black" />
+                        </svg>
+                      </div>
+                      <span class="attractions-item__label-text">Гора-Колокол</span>
+                    </label>
+                  </li>
+                  <li class="attractions-item">
+                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="park"
+                      id="park" checked>
+                    <label class="attractions-item__label" for="park">
+                      <div class="checkbox-icon">
+                        <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
+                            fill="black" />
+                        </svg>
+                      </div>
+                      <span class="attractions-item__label-text">Слайд-парк</span>
+                    </label>
+                  </li>
+                  <li class="attractions-item">
+                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="rocks"
+                      id="rocks">
+                    <label class="attractions-item__label" for="rocks">
+                      <div class="checkbox-icon">
+                        <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
+                            fill="black" />
+                        </svg>
+                      </div>
+                      <span class="attractions-item__label-text">Красные скалы</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="form__item form__item--emotions">
+              <legend class="visually-hidden">Впечатления</legend>
+              <div class="form__container">
+                <h2 class="form__item-title form__item-title--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
+                <textarea class="emotions-textarea" required>Опишите подробно все свои восторги</textarea>
+              </div>
+            </fieldset>
+            <div class="review-wrapper">
+              <a class="review-button" href="#" aria-label="Отправить отзыв">
+                <span>ОТПРАВИТЬ ОТЗЫВ</span>
+              </a>
+              <p class="required-fields-text">* &mdash; Обязательные поля</p>
+            </div>
+          </form>
+          <div class="popup-failure">
+            <h3 class="popup-failure__title">ЧТО-ТО ПОШЛО <br class="popup-failure__title-br-tablet"> НЕ ТАК!</h3>
+            <p class="popup-failure__text">Проверьте поля, выделенные<br class="popup-failure__text-br-mobile"> красным,
+              <br class="popup-failure__text-br-tablet"> скорее всего вы<br class="popup-failure__text-br-mobile">
+              забыли их
+              заполнить
+            </p>
+            <a class="popup-failure__button" href="#" aria-label="Кнопка подтверждения">
+              <span class="popup-failure__button-text">OK</span>
+            </a>
           </div>
-        </fieldset>
-        <fieldset class="form__item form__item--impression">
-          <legend class="visually-hidden">Впечатление</legend>
-          <div class="form__container">
-            <h2 class="form__item-title form__item-title--impression">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
-            <ul class="impression-list">
-              <li class="impression-item">
-                <input class="impression-item__input-radio visually-hidden" type="radio" name="impression" id="positive"
-                  checked>
-                <label class="impression-item-label" for="positive">
-                  <div class="radio-icon">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
-                        fill="#333333" stroke="#333333" stroke-width="3" />
-                    </svg>
-                  </div>
-                  <span class="impression-item-label-text">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="impression-item">
-                <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
-                  id="negative">
-                <label class="impression-item-label" for="negative">
-                  <div class="radio-icon">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
-                        fill="#333333" stroke="#333333" stroke-width="3" />
-                    </svg>
-                  </div>
-                  <span class="impression-item-label-text">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="impression-item">
-                <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
-                  id="difficult-to-answer">
-                <label class="impression-item-label" for="difficult-to-answer">
-                  <div class="radio-icon">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
-                        fill="#333333" stroke="#333333" stroke-width="3" />
-                    </svg>
-                  </div>
-                  <span class="impression-item-label-text">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
+          <div class="popup-success">
+            <h3 class="popup-success__title">Ваш отзыв отправлен!</h3>
+            <p class="popup-success__text">Спасибо за ваше участие, ваш <br class="popup-success__text-br-mobile">отзыв
+              уже
+              поступил к нам. <br class="popup-success__text-br-mobile"> <br class="popup-success__text-br-tablet">В
+              ближайшее время
+              мы <br class="popup-success__text-br-mobile">
+              опубликуем его на сайте.</p>
+            <a class="popup-success__button" href="#" aria-label="Закрыть окно">
+              <span class="popup-success__button-text">Закрыть окно</span>
+            </a>
           </div>
-        </fieldset>
-        <fieldset class="form__item form__item--attractions">
-          <legend class="visually-hidden">Посещенные достопримечательности</legend>
-          <div class="form__container">
-            <h2 class="form__item-title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
-            <ul class="attractions-list">
-              <li class="attractions-item">
-                <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="bridge"
-                  id="bridge" checked>
-                <label class="attractions-item__label" for="bridge">
-                  <div class="checkbox-icon">
-                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
-                        fill="black" />
-                    </svg>
-                  </div>
-                  <span class="attractions-item__label-text">Мост Дьявола</span>
-                </label>
-              </li>
-              <li class="attractions-item">
-                <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="mountain"
-                  id="mountain" checked>
-                <label class="attractions-item__label" for="mountain">
-                  <div class="checkbox-icon">
-                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
-                        fill="black" />
-                    </svg>
-                  </div>
-                  <span class="attractions-item__label-text">Гора-Колокол</span>
-                </label>
-              </li>
-              <li class="attractions-item">
-                <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="park" id="park"
-                  checked>
-                <label class="attractions-item__label" for="park">
-                  <div class="checkbox-icon">
-                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
-                        fill="black" />
-                    </svg>
-                  </div>
-                  <span class="attractions-item__label-text">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="attractions-item">
-                <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="rocks" id="rocks">
-                <label class="attractions-item__label" for="rocks">
-                  <div class="checkbox-icon">
-                    <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
-                        fill="black" />
-                    </svg>
-                  </div>
-                  <span class="attractions-item__label-text">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <a class="page-footer__link" href="index.html" aria-label="Посетить Седону">#VISITSEDONA</a>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="#" aria-label="Twitter">
+                <svg class="page-footer__social-link-icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="#" aria-label="Facebook">
+                <svg class="page-footer__social-link-icon" width="9" height="19" viewBox="0 0 9 19" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="#" aria-label="Youtube">
+                <svg class="page-footer__social-link-icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright">
+            <p class="page-footer__copyright-text">РАЗРАБОТАНО</p>
+            <a class="page-footer__copyright-link" href="#" aria-label="HTML Academy">
+              <svg class="page-footer__copyright-link-icon" width="27" height="35" viewBox="0 0 27 35" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+                  fill="black" />
+              </svg>
+            </a>
           </div>
-        </fieldset>
-        <fieldset class="form__item form__item--emotions">
-          <legend class="visually-hidden">Впечатления</legend>
-          <div class="form__container">
-            <h2 class="form__item-title form__item-title--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
-            <textarea class="emotions-textarea" required>Опишите подробно все свои восторги</textarea>
-          </div>
-        </fieldset>
-        <a class="review-button" href="#" aria-label="Отправить отзыв">
-          <span>ОТПРАВИТЬ ОТЗЫВ</span>
-        </a>
-      </form>
-      <div class="popup-failure">
-        <h3 class="popup-failure__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-        <p class="popup-failure__text">Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить
-        </p>
-        <a class="popup-failure__button" href="#" aria-label="Кнопка подтверждения">
-          <span class="popup-failure__button-text">OK</span>
-        </a>
-      </div>
-      <div class="popup-success">
-        <h3 class="popup-success__title">Ваш отзыв отправлен!</h3>
-        <p class="popup-success__text">Спасибо за ваше участие, ваш <br>отзыв уже поступил к нам. <br> В ближайшее время
-          мы <br>
-          опубликуем его на сайте.</p>
-        <a class="popup-success__button" href="#" aria-label="Закрыть окно">
-          <span class="popup-success__button-text">Закрыть окно</span>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__container">
-      <a class="page-footer__link" href="index.html" aria-label="Посетить Седону">#VISITSEDONA</a>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#" aria-label="Twitter">
-            <svg class="page-footer__social-link-icon" width="18" height="15" viewBox="0 0 18 15" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z"
-                fill="white" />
-            </svg>
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#" aria-label="Facebook">
-            <svg class="page-footer__social-link-icon" width="9" height="19" viewBox="0 0 9 19" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z"
-                fill="white" />
-            </svg>
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#" aria-label="Youtube">
-            <svg class="page-footer__social-link-icon" width="20" height="14" viewBox="0 0 20 14" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z"
-                fill="white" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-text">РАЗРАБОТАНО</p>
-        <a class="page-footer__copyright-link" href="#" aria-label="HTML Academy">
-          <svg class="page-footer__copyright-link-icon" width="27" height="35" viewBox="0 0 27 35" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-              fill="black" />
-          </svg>
-        </a>
-      </div>
+        </div>
+      </footer>
     </div>
-  </footer>
+  </div>
 
 </body>
 
