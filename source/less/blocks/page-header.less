@@ -46,13 +46,18 @@
 }
 
 .page-header__container--desktop-form {
+  @media (min-width: @tablet-width) {
+    padding-top: 78px;
+    padding-bottom: 118px;
+  }
+
   @media (min-width: @desktop-width) {
     background: linear-gradient(351deg, @basic-white 53px, transparent 54px),
       linear-gradient(9deg, @basic-white 53px, transparent 54px);
   }
 }
 
-.page-header__container--nav{
+.page-header__container--nav {
   width: 320px;
   margin: 0 auto 6px;
 
@@ -90,16 +95,16 @@
 .page-header--form {
   @media (min-width: @tablet-width) {
     background: linear-gradient(353deg, @basic-white 38px, transparent 39px),
-    linear-gradient(7deg, @basic-white 38px, transparent 39px),
-    url("../../img/header-tablet-background.jpg") 0 -171px no-repeat;
+      linear-gradient(7deg, @basic-white 38px, transparent 39px),
+      url("../../img/header-tablet-background.jpg") 0 -171px no-repeat;
     margin: 0 auto;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     background: linear-gradient(355deg, @basic-white 53px, transparent 54px),
-    linear-gradient(5deg, @basic-white 53px, transparent 54px),
-    url("../../img/header-desktop-background.jpg") 0 -161px no-repeat;
+      linear-gradient(5deg, @basic-white 53px, transparent 54px),
+      url("../../img/header-desktop-background.jpg") 0 -161px no-repeat;
     margin: 0 auto;
     width: 1200px;
   }
@@ -125,14 +130,6 @@
     padding: 0;
   }
 }
-
-.page-header__container--desktop-form {
-  @media (min-width: @tablet-width) {
-    padding-top: 78px;
-    padding-bottom: 118px;
-  }
-}
-
 
 .page-header__logo-link {
   margin: 0 auto;
