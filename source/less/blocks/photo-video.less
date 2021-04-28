@@ -1,12 +1,25 @@
 .photo-video {
   width: 320px;
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 38px;
+  background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding-top: 61px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding-top: 102px;
+    padding-bottom: 82px;
+  }
 }
 
 .photo-video__title {
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 4px;
   padding: 0;
   font-family: @ptsans;
   font-style: normal;
@@ -16,10 +29,16 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-left: 0;
+    margin-bottom: 33px;
+  }
 }
 
 .photo-video__description {
-  margin: 0 0 31px 0;
+  margin: 0 0 31px 4px;
   padding: 0;
   font-family: @ptsans;
   font-style: normal;
@@ -29,39 +48,233 @@
   text-align: center;
   text-transform: uppercase;
   color: @special-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.photo-video__description-br-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photo-video__description-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .photo-video__container {
-  width: 282px;
+  width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .photo-video__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .photo-video__item {
-  margin-bottom: 14px;
-  padding-top: 312px;
   border-top: 1px solid @grey-disabled;
+  margin: 0 auto 16px;
+  padding-top: 22px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.photo-video__image-wrapper {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+    margin-bottom: -80px;
+  }
+}
+
+.photo-video__image-description-wrapper {
+  @media (min-width: @tablet-width) {
+    background-color: @input-grey;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @transparent-black-2;
+    width: 400px;
+  }
+}
+
+.photo-video__item-text-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 210px;
+  }
+}
+
+.photo-video__likes-icon path {
+  @media (min-width: @desktop-width) {
+    fill: @basic-white;
+    opacity: 1;
+  }
+}
+
+.photo-video__likes-num {
+  margin: 0 0 0 14px;
+  padding: 2px 0 0 0;
+  font-family: @ptsans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
 }
 
 .photo-video__item:nth-child(1) {
-  background: url("../../img/sedona-photo-3.jpg") 21px 21px no-repeat;
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
-.photo-video__item:nth-child(2) {
-  background: url("../../img/sedona-photo-4.jpg") 21px 21px no-repeat;
+.photo-video__item:nth-child(1) .photo-video__image-wrapper {
+  background: url("../../img/sedona-photo-3.jpg");
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 648px;
+    height: 400px;
+    background: url("../../img/sedona-photo-3-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 400px;
+    margin-bottom: -80px;
+    background: url("../../img/sedona-photo-3-desktop.jpg");
+  }
 }
 
-.photo-video__item:nth-child(3) {
-  background: url("../../img/sedona-photo-5.jpg") 21px 21px no-repeat;
+.photo-video__item:nth-child(1) .photo-video__image-description-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
-.photo-video__item:nth-child(4) {
-  background: url("../../img/sedona-photo-6.jpg") 21px 21px no-repeat;
+.photo-video__item:nth-child(1) .photo-video__likes-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 354px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 905px;
+  }
+}
+
+.photo-video__item:nth-child(2) .photo-video__image-wrapper {
+  background: url("../../img/sedona-photo-4.jpg");
+
+  @media (min-width: @tablet-width) {
+    background: url("../../img/sedona-photo-4-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../../img/sedona-photo-4-desktop.jpg");
+  }
+}
+
+.photo-video__item:nth-child(3) .photo-video__image-wrapper {
+  background: url("../../img/sedona-photo-5.jpg");
+
+  @media (min-width: @tablet-width) {
+    background: url("../../img/sedona-photo-5-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../../img/sedona-photo-5-desktop.jpg");
+  }
+}
+
+.photo-video__item:nth-child(4) .photo-video__image-wrapper {
+  background: url("../../img/sedona-photo-6.jpg");
+
+  @media (min-width: @tablet-width) {
+    background: url("../../img/sedona-photo-6-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../../img/sedona-photo-6-desktop.jpg");
+  }
 }
 
 .photo-video__item-title {
@@ -74,6 +287,10 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
 }
 
 .photo-video__item-text {
@@ -85,34 +302,43 @@
   font-size: 14px;
   line-height: 24px;
   color: @special-black;
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
 }
 
-.photo-video__likes-wrapper {
+.photo-video__item:not(:nth-child(1)) .photo-video__likes-wrapper {
   display: flex;
   justify-content: flex-start;
   margin-left: 21px;
-}
 
-.photo-video__likes-num {
-  margin: 0 0 0 14px;
-  padding: 4px 0 0 0;
-  font-family: @ptsans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: @basic-black;
-  align-self: center;
+  @media (min-width: @tablet-width) {
+    margin-top: 12px;
+    margin-left: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 105px;
+  }
 }
 
 .photo-video__video {
   padding-top: 34px;
   border-top: 1px solid @grey-disabled;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 56px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 60px;
+  }
 }
 
 .photo-video__video-title {
-  margin: 0 0 31px 0;
+  margin: 0 0 27px 0;
   padding: 0;
   font-family: @ptsans;
   font-style: normal;
@@ -122,6 +348,15 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .photo-video__video-text {
@@ -135,11 +370,63 @@
   text-align: center;
   text-transform: uppercase;
   color: @special-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 78px;
+  }
+}
+
+.photo-video__video-text-br-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photo-video__video-text-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .video-items-wrapper {
-  padding-top: 190px;
-  background: url("../../img/sedona-video.jpg") 0 33px no-repeat;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.video-picture-wrapper {
+  width: 320px;
+  height: 201px;
+  background: url("../../img/sedona-video.jpg");
+  margin-bottom: -45px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+    background: url("../../img/sedona-video-tablet.jpg");
+    margin-bottom: -93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+    background: url("../../img/sedona-video-desktop.jpg");
+  }
 }
 
 .video-length-menu {
@@ -150,6 +437,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 93px;
+    justify-content: flex-start;
+    margin-bottom: -93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .video-line {
@@ -157,6 +455,15 @@
   width: 235px;
   height: 3px;
   background-color: @transparent-white-2;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 93px;
+    width: 389px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
 }
 
 .video-line-handler {
@@ -167,6 +474,10 @@
   left: 34px;
   border-radius: 50%;
   background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    left: 113px;
+  }
 }
 
 .video-menu {
@@ -177,6 +488,16 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 93px;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .replay-button {
@@ -184,6 +505,10 @@
   background-color: transparent;
   margin-left: 20px;
   outline: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 29px;
+  }
 }
 
 .subtitles-button {
@@ -191,6 +516,14 @@
   background-color: transparent;
   margin-left: 120px;
   outline: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 461px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 611px;
+  }
 }
 
 .fullscreen-button {
@@ -198,6 +531,14 @@
   background-color: transparent;
   margin-left: 20px;
   outline: none;
+}
+
+.replay path,
+.subtitles path,
+.fullscreen path {
+  @media (min-width: @tablet-width) {
+    fill: @basic-white;
+  }
 }
 
 .replay:hover path,
