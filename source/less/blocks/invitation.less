@@ -6,12 +6,20 @@
   padding-bottom: 396px;
   background: url("../../img/map-mobile.jpg") 0 287px no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/map-mobile@2x.jpg") 0 287px no-repeat cover;
+  }
+
   @media (min-width: @tablet-width) {
     width: 768px;
     margin: 0 auto;
     padding-top: 56px;
     background: url("../../img/map-tablet.jpg") 0 318px no-repeat;
     padding-bottom: 410px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/map-tablet@2x.jpg") 0 318px no-repeat cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -19,6 +27,11 @@
     background: url("../../img/map-desktop.jpg") 0 331px no-repeat,
       @basic-white;
     padding-bottom: 419px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/map-desktop@2x.jpg") 0 331px no-repeat cover,
+        @basic-white;
+    }
   }
 }
 

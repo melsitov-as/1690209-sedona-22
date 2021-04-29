@@ -148,16 +148,28 @@
   width: 320px;
   height: 260px;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/sedona-photo-1-mobile@2x.jpg") no-repeat cover;
+  }
+
   @media (min-width: @tablet-width) {
     width: 512px;
     background: url("../../img/sedona-photo-1-tablet.jpg") no-repeat;
     background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/sedona-photo-1-tablet@2x.jpg") no-repeat cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
     background: url("../../img/sedona-photo-1.jpg") no-repeat;
     background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/sedona-photo-1@2x.jpg") no-repeat cover;
+    }
   }
 }
 
@@ -200,18 +212,30 @@
   height: 260px;
   background: url("../../img/sedona-photo-2-mobile.jpg") no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/sedona-photo-2-mobile@2x.jpg") no-repeat cover;
+  }
+
 
   @media (min-width: @tablet-width) {
     width: 512px;
     background: url("../../img/sedona-photo-2-tablet.jpg") no-repeat;
     background-size: 100% 100%;
     order: 1;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/sedona-photo-2-tablet@2x.jpg") no-repeat cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
     background: url("../../img/sedona-photo-2.jpg") no-repeat;
     background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/sedona-photo-2@2x.jpg") no-repeat cover;
+    }
   }
 }
 
