@@ -21,14 +21,14 @@
         <div class="page-header__container page-header__container--nav">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo-link" href="index.html" aria-label="Логотип Седона">
-              <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона" width="102"
-                height="84">
-              <img class="page-header__logo-tablet-img" src="img/logotype-tablet.png" alt="Логотип Седона" width="102"
-                height="84">
-              <img class="page-header__logo-desktop-img" src="img/logotype-desktop.png" alt="Логотип Седона" width="102"
-                height="84">
-              <img class="page-header__logo-desktop-background" src="img/logotype-desktop-background.png"
-                alt="Логотип Седона" width="187" height="97">
+              <picture>
+                <source class="page-header__logo-desktop-img" media="(min-width: 1200px)"
+                  srcset="img/logotype-desktop.png" width="187" height="97">
+                <source class="page-header__logo-tablet-img" media="(min-width: 768px)"
+                  srcset="img/logotype-tablet.png">
+                <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона" width="102"
+                  height="84">
+              </picture>
             </a>
             <button class="page-header__hamburger-button">
               <img class="page-header__hamburger-button-icon" src="img/hamburger-icon.svg" alt="Открыть меню" width="23"
