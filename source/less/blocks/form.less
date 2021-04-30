@@ -374,6 +374,19 @@
   height: 50px;
 }
 
+.form__item-input[name~="name"]:active {
+  @media (min-width: @desktop-width) {
+    width: 319px;
+  }
+}
+
+.form__item-input[name~="surname"]:active,
+.form__item-input[name~="patronymic"]:active{
+  @media (min-width: @desktop-width) {
+    width: 282px;
+  }
+}
+
 .form__item-input--phone:active,
 .form__item-input--email:active {
   width: 224px;
