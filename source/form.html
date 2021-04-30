@@ -16,29 +16,24 @@
 <body class="page">
   <div class="page-wrapper">
     <div class="page-shadow-wrapper">
-      <header class="page-header page-header--form">
-        <div class="page-header__container page-header__container--nav page-header__container--nav-form">
-          <div class="page-header__logo-wrapper page-header__logo-wrapper--form">
-            <a class="page-header__logo-link" href="index.html" aria-label="Логотип Седона">
+      <header class="page-header-inner">
+        <div class="page-header-inner__container">
+          <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона">
+            <picture>
+              <source class="page-header__logo-desktop-img" media="(min-width: 1200px)"
+                srcset="img/logotype-desktop.png" width="187" height="97">
+              <source class="page-header__logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
               <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона" width="102"
                 height="84">
-              <img class="page-header__logo-tablet-img" src="img/logotype-tablet.png" alt="Логотип Седона" width="102"
-                height="84">
-              <img class="page-header__logo-desktop-img" src="img/logotype-desktop.png" alt="Логотип Седона" width="102"
-                height="84">
-              <img class="page-header__logo-desktop-background" src="img/logotype-desktop-background.png"
-                alt="Логотип Седона" width="187" height="97">
-            </a>
-            <button class="page-header__hamburger-button">
-              <img class="page-header__hamburger-button-icon" src="img/hamburger-icon.svg" alt="Открыть меню" width="23"
-                height="22">
-            </button>
-          </div>
-          <nav class="user-nav user-nav--form">
-            <button class="user-nav__close-button">
-              <img class="user-nav__close-button-icon" src="img/close-button-icon.svg" alt="Закрыть меню" width="22"
-                height="22">
-            </button>
+            </picture>
+          </a>
+        </div>
+        <nav class="user-nav">
+          <button class="user-nav__hamburger-button">
+            <img class="page-header__hamburger-button-icon" src="img/hamburger-icon.svg" alt="Открыть меню" width="23"
+              height="22">
+          </button>
+          <div class="user-nav__wrapper">
             <div class="user-nav__item">
               <a class="user-nav__link" href="index.html">ГЛАВНАЯ</a>
             </div>
@@ -51,11 +46,14 @@
             <div class="user-nav__item">
               <a class="user-nav__link" href="#">HTML ACADEMY</a>
             </div>
-          </nav>
-        </div>
-        <div class="page-header__container page-header__container--desktop page-header__container--desktop-form">
-          <img class="page-header__sedona-text-logo page-header__sedona-text-logo--form" src="img/sedona-text-logo.png"
-            alt="Sedona" width="282" height="49">
+            <button class="close-button">
+              <img class="close-button__img" src="img/close-button-icon.svg" width="22" height="22">
+            </button>
+          </div>
+        </nav>
+        <div class="image-container-inner">
+          <img class="page-header__sedona-text-logo" src="img/sedona-text-logo.png" alt="Sedona" width="282"
+            height="49">
         </div>
       </header>
 
