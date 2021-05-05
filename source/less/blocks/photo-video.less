@@ -162,7 +162,9 @@
   }
 }
 
-.photo-video__likes-icon path {
+.photo-video__likes-icon use {
+  opacity: 0.3;
+
   @media (min-width: @desktop-width) {
     fill: @basic-white;
     opacity: 1;
@@ -479,6 +481,14 @@
   }
 }
 
+.replay-button use {
+  fill: @button-grey;
+
+  @media (min-width: @tablet-width) {
+    fill: @basic-white;
+  }
+}
+
 .subtitles-button {
   border: none;
   background-color: transparent;
@@ -494,6 +504,14 @@
   }
 }
 
+.subtitles-button use {
+  fill: @button-grey;
+
+  @media (min-width: @tablet-width) {
+    fill: @basic-white;
+  }
+}
+
 .fullscreen-button {
   border: none;
   background-color: transparent;
@@ -501,23 +519,33 @@
   outline: none;
 }
 
-.replay path,
-.subtitles path,
-.fullscreen path {
+.fullscreen-button use {
+  fill: @button-grey;
+
   @media (min-width: @tablet-width) {
     fill: @basic-white;
   }
 }
 
-.replay:hover path,
-.subtitles:hover path,
-.fullscreen:hover path {
+.replay-button:hover use,
+.subtitles-button:hover use,
+.fullscreen-button:hover use {
   fill: @special-black;
+
+  @media (min-width: @tablet-width) {
+    fill: @basic-white;
+    opacity: 0.6;
+  }
 }
 
-.replay:active path,
-.subtitles:active path,
-.fullscreen:active path {
+.replay-button:active use,
+.subtitles-button:active use,
+.fullscreen-button:active use {
   fill: @special-black;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    fill: @basic-white;
+    opacity: 0.3;
+  }
 }
