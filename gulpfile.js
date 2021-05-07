@@ -41,17 +41,28 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
-// // Scripts
+// Scripts
 
-// const scripts = () => {
-//   return gulp.src("source/js/script.js")
-//     .pipe(terser())
-//     .pipe(rename("script.min.js"))
-//     .pipe(gulp.dest("build/js"))
-//     .pipe(sync.stream());
-// }
+const scripts = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
 
-// exports.scripts = scripts;
+exports.scripts = scripts;
+
+//Scripts-popup
+const popupScript = () => {
+  return gulp.src("source/js/popup-script.js")
+    .pipe(terser())
+    .pipe(rename("popup-script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.popupScript = popupScript;
 
 // Images
 
@@ -120,6 +131,8 @@ const clean = () => {
   return del("build");
 };
 
+exports.clean = clean;
+
 // Server
 
 const server = (done) => {
@@ -147,7 +160,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  // gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -160,7 +173,8 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    // scripts,
+    scripts,
+    popupScript,
     sprite,
     createWebp
   ),
@@ -178,7 +192,8 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-    // scripts,
+    scripts,
+    popupScript,
     sprite,
     createWebp
   ),
@@ -189,7 +204,7 @@ exports.default = gulp.series(
 
 
 
-// // Styles
+// Styles
 
 // const styles = () => {
 //   return gulp.src("source/less/style.less")
@@ -205,6 +220,14 @@ exports.default = gulp.series(
 // }
 
 // exports.styles = styles;
+
+// // Clean
+
+// const clean = () => {
+//   return del("build");
+// };
+
+// exports.clean = clean;
 
 // // Server
 
@@ -232,3 +255,5 @@ exports.default = gulp.series(
 // exports.default = gulp.series(
 //   styles, server, watcher
 // );
+
+

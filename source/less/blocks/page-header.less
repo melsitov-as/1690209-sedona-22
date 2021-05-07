@@ -182,9 +182,11 @@
   opacity: 0.3;
 }
 
+
 .user-nav__wrapper {
   position: absolute;
   display: none;
+  flex-direction: column;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
@@ -193,6 +195,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
     position: relative;
@@ -205,6 +208,18 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+  }
+}
+
+.menu-active {
+  display: flex;
+}
+
+.above {
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    z-index: 1;
   }
 }
 
@@ -286,6 +301,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+  font-display: swap;
   line-height: 40px;
   color: @basic-white;
   text-decoration: none;
