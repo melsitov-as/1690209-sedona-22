@@ -15,6 +15,3 @@ closeButton.onclick = function () {
   mobileMenu.classList.remove("menu-active");
   userNav.classList.remove("above");
 };
-
-
-
