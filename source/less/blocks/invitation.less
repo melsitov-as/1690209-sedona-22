@@ -4,21 +4,25 @@
   margin: 0 auto;
   padding-top: 34px;
   padding-bottom: 396px;
-  background: url("../../img/map-mobile.webp") 0 287px no-repeat;
+  background: url("../../img/map-mobile.webp") 0 287px no-repeat,
+      lightgreen;
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/map-mobile@2x.webp") 0 287px no-repeat cover;
+    background: url("../../img/map-mobile@2x.webp") 0 287px no-repeat cover
+      lightgreen;
   }
 
   @media (min-width: @tablet-width) {
     width: 768px;
     margin: 0 auto;
     padding-top: 56px;
-    background: url("../../img/map-tablet.webp") 0 318px no-repeat;
+    background: url("../../img/map-tablet.webp") 0 318px no-repeat,
+      lightgreen;
     padding-bottom: 410px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/map-tablet@2x.webp") 0 318px no-repeat cover;
+      background: url("../../img/map-tablet@2x.webp") 0 318px no-repeat cover,
+        lightgreen;
     }
   }
 
@@ -70,7 +74,7 @@
 .invitation__title {
   margin: 0 0 22px 0;
   padding: 0;
-  font-family: @ptsans;
+  font-family: @ptsans, "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -88,7 +92,7 @@
 .invitation__description {
   margin: 0 0 27px 0;
   padding: 0;
-  font-family: @ptsans;
+  font-family: @ptsans, "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -143,7 +147,7 @@
 
 .invitation__search-button-text {
   display: block;
-  font-family: @ptsans;
+  font-family: @ptsans, "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;

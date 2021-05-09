@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -21,16 +21,15 @@
           <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона">
             <picture>
               <source class="page-header__logo-desktop-img" media="(min-width: 1200px)"
-                srcset="img/logotype-desktop.png" width="187" height="97">
+                srcset="img/logotype-desktop.png">
               <source class="page-header__logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
-              <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона" width="102"
-                height="84">
+              <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона">
             </picture>
           </a>
         </div>
         <nav class="user-nav">
           <button class="user-nav__hamburger-button">
-            <svg class="hamburger-button-icon" viewBox="0 0 23 22">
+            <svg class="hamburger-button-icon" width="23" height="22" viewBox="0 0 23 22">
               <use xlink:href="img/sprite.svg#hamburger-icon"></use>
             </svg>
           </button>
@@ -48,7 +47,7 @@
               <a class="user-nav__link" href="#">HTML ACADEMY</a>
             </div>
             <button class="close-button">
-              <svg class="close-button__img" viewBox="0 0 22 22">
+              <svg class="close-button__img" width="22" height="22" viewBox="0 0 22 22">
                 <use xlink:href="img/sprite.svg#close-icon"></use>
               </svg>
             </button>
@@ -133,13 +132,13 @@
                     <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
                       id="positive" checked>
                     <label class="impression-item-label" for="positive">
-                      <div class="radio-icon">
+                      <span class="radio-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
                             fill="#333333" stroke="#333333" stroke-width="3" />
                         </svg>
-                      </div>
+                      </span>
                       <span class="impression-item-label-text">Скорее положительное</span>
                     </label>
                   </li>
@@ -147,13 +146,13 @@
                     <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
                       id="negative">
                     <label class="impression-item-label" for="negative">
-                      <div class="radio-icon">
+                      <span class="radio-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
                             fill="#333333" stroke="#333333" stroke-width="3" />
                         </svg>
-                      </div>
+                      </span>
                       <span class="impression-item-label-text">Скорее отрицательное</span>
                     </label>
                   </li>
@@ -161,13 +160,13 @@
                     <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
                       id="difficult-to-answer">
                     <label class="impression-item-label" for="difficult-to-answer">
-                      <div class="radio-icon">
+                      <span class="radio-icon">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
                             fill="#333333" stroke="#333333" stroke-width="3" />
                         </svg>
-                      </div>
+                      </span>
                       <span class="impression-item-label-text">Затрудняюсь ответить</span>
                     </label>
                   </li>
@@ -184,13 +183,13 @@
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="bridge"
                       id="bridge" checked>
                     <label class="attractions-item__label" for="bridge">
-                      <div class="checkbox-icon">
+                      <span class="checkbox-icon">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
-                      </div>
+                      </span>
                       <span class="attractions-item__label-text">Мост Дьявола</span>
                     </label>
                   </li>
@@ -198,13 +197,13 @@
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="mountain"
                       id="mountain" checked>
                     <label class="attractions-item__label" for="mountain">
-                      <div class="checkbox-icon">
+                      <span class="checkbox-icon">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
-                      </div>
+                      </span>
                       <span class="attractions-item__label-text">Гора-Колокол</span>
                     </label>
                   </li>
@@ -212,13 +211,13 @@
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="park"
                       id="park" checked>
                     <label class="attractions-item__label" for="park">
-                      <div class="checkbox-icon">
+                      <span class="checkbox-icon">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
-                      </div>
+                      </span>
                       <span class="attractions-item__label-text">Слайд-парк</span>
                     </label>
                   </li>
@@ -226,13 +225,13 @@
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="rocks"
                       id="rocks">
                     <label class="attractions-item__label" for="rocks">
-                      <div class="checkbox-icon">
+                      <span class="checkbox-icon">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
-                      </div>
+                      </span>
                       <span class="attractions-item__label-text">Красные скалы</span>
                     </label>
                   </li>
@@ -319,8 +318,8 @@
       </footer>
     </div>
   </div>
-  <script src="js/script.min.js"></script>
-  <script src="js/popup-script.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/popup-script.js"></script>
 </body>
 
 </html>

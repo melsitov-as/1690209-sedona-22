@@ -4,12 +4,14 @@
   padding-bottom: 86px;
   background: linear-gradient(9deg, @basic-white 26px, transparent 27px),
     linear-gradient(351deg, @basic-white 26px, transparent 27px),
-    url("../../img/header-background-mobile.webp") 0 56px no-repeat;
+    url("../../img/header-background-mobile.webp") 0 56px no-repeat,
+    lightblue;
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(9deg, @basic-white 26px, transparent 27px),
       linear-gradient(351deg, @basic-white 26px, transparent 27px),
-      url("../../img/header-background-mobile@2x.webp") 0 56px cover no-repeat;
+      url("../../img/header-background-mobile@2x.webp") 0 56px cover no-repeat,
+      lightblue;
   }
 
   @media (min-width: @tablet-width) {
@@ -51,12 +53,14 @@
   padding-bottom: 67px;
   background: linear-gradient(9deg, @basic-white 26px, transparent 27px),
     linear-gradient(351deg, @basic-white 26px, transparent 27px),
-    url("../../img/header-background-mobile.webp") 0 -174px no-repeat;
+    url("../../img/header-background-mobile.webp") 0 -174px no-repeat,
+    lightblue;
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(9deg, @basic-white 26px, transparent 27px),
       linear-gradient(351deg, @basic-white 26px, transparent 27px),
-      url("../../img/header-background-mobile@2x.webp") 0 -174px cover no-repeat;
+      url("../../img/header-background-mobile@2x.webp") 0 -174px cover no-repeat,
+      lightblue;
   }
 
   @media (min-width: @tablet-width) {
@@ -64,12 +68,14 @@
     padding-bottom: 0;
     background: linear-gradient(6deg, @basic-white 38px, transparent 39px),
       linear-gradient(354deg, @basic-white 38px, transparent 39px),
-      url("../../img/header-tablet-background.webp") 0 -172px no-repeat;
+      url("../../img/header-tablet-background.webp") 0 -172px no-repeat,
+      lightblue;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(6deg, @basic-white 38px, transparent 39px),
         linear-gradient(354deg, @basic-white 38px, transparent 39px),
-        url("../../img/header-tablet-background@2x.webp") 0 -172px cover no-repeat;
+        url("../../img/header-tablet-background@2x.webp") 0 -172px cover no-repeat,
+        lightblue;
     }
   }
 
@@ -77,12 +83,14 @@
     width: 1200px;
     background: linear-gradient(6deg, @basic-white 60px, transparent 61px),
       linear-gradient(354deg, @basic-white 60px, transparent 61px),
-      url("../../img/header-desktop-background.webp") 0 -161px no-repeat;
+      url("../../img/header-desktop-background.webp") 0 -161px no-repeat,
+    lightblue;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(6deg, @basic-white 60px, transparent 61px),
         linear-gradient(354deg, @basic-white 60px, transparent 61px),
-        url("../../img/header-desktop-background@2x.webp") 0 -161px cover no-repeat;
+        url("../../img/header-desktop-background@2x.webp") 0 -161px cover no-repeat,
+        lightblue;
     }
   }
 }
@@ -125,6 +133,13 @@
     width: 187px;
     height: 97px;
     margin-bottom: -97px;
+  }
+}
+
+.page-header__logo-mobile-img {
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: 97px;
   }
 }
 
@@ -223,6 +238,18 @@
   }
 }
 
+.menu-no-js {
+  display: flex;
+}
+
+.user-nav-no-js {
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    z-index: 1;
+  }
+}
+
 .user-nav__item {
   width: 320px;
   margin-bottom: 1px;
@@ -297,7 +324,7 @@
 }
 
 .user-nav__link {
-  font-family: @ptsans;
+  font-family: @ptsans, "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
