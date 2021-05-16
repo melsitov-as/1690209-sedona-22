@@ -71,9 +71,9 @@
         <section class="form">
           <h2 class="visually-hidden">Форма</h2>
           <form class="form__wrapper" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="form__item form__item--user-data">
-              <legend class="visually-hidden">Данные пользователя</legend>
-              <div class="form__container">
+            <div class="form__container">
+              <fieldset class="form__item form__item--user-data">
+                <legend class="visually-hidden">Данные пользователя</legend>
                 <h2 class="form__item-title form__item-title--user-data">ПРЕДСТАВЬТЕСЬ:</h2>
                 <ul class="form__item-user-data-list">
                   <li class="form__item-user-data-item">
@@ -90,11 +90,9 @@
                       placeholder="Александрович">
                   </li>
                 </ul>
-              </div>
-            </fieldset>
-            <fieldset class="form__item form__item--contacts">
-              <legend class="visually-hidden">Контактная информация</legend>
-              <div class="form__container">
+              </fieldset>
+              <fieldset class="form__item form__item--contacts">
+                <legend class="visually-hidden">Контактная информация</legend>
                 <h2 class="form__item-title form__item-title--contacts">Контактная информация:</h2>
                 <ul class="form__user-contacts-list">
                   <li class="form__user-contacts-item">
@@ -119,11 +117,9 @@
                     </div>
                   </li>
                 </ul>
-              </div>
-            </fieldset>
-            <fieldset class="form__item form__item--impression">
-              <legend class="visually-hidden">Впечатление</legend>
-              <div class="form__container">
+              </fieldset>
+              <fieldset class="form__item form__item--impression">
+                <legend class="visually-hidden">Впечатление</legend>
                 <h2 class="form__item-title form__item-title--impression">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
                 <ul class="impression-list">
                   <li class="impression-item">
@@ -169,15 +165,13 @@
                     </label>
                   </li>
                 </ul>
-              </div>
-            </fieldset>
-            <fieldset class="form__item form__item--attractions">
-              <legend class="visually-hidden">Посещенные достопримечательности</legend>
-              <div class="form__container">
+              </fieldset>
+              <fieldset class="form__item form__item--attractions">
+                <legend class="visually-hidden">Посещенные достопримечательности</legend>
                 <h2 class="form__item-title form__item-title--attractions">ПОСЕЩЕННЫЕ <br
                     class="form__item-title-br-tablet">ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
                 <ul class="attractions-list">
-                  <li class="attractions-item">
+                  <li class="attractions-item attractions-item--bridge">
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="bridge"
                       id="bridge" checked>
                     <label class="attractions-item__label" for="bridge">
@@ -191,7 +185,7 @@
                       <span class="attractions-item__label-text">Мост Дьявола</span>
                     </label>
                   </li>
-                  <li class="attractions-item">
+                  <li class="attractions-item attractions-item--mountain">
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="mountain"
                       id="mountain" checked>
                     <label class="attractions-item__label" for="mountain">
@@ -205,7 +199,7 @@
                       <span class="attractions-item__label-text">Гора-Колокол</span>
                     </label>
                   </li>
-                  <li class="attractions-item">
+                  <li class="attractions-item attractions-item--park">
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="park"
                       id="park" checked>
                     <label class="attractions-item__label" for="park">
@@ -219,7 +213,7 @@
                       <span class="attractions-item__label-text">Слайд-парк</span>
                     </label>
                   </li>
-                  <li class="attractions-item">
+                  <li class="attractions-item attractions-item--rocks">
                     <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="rocks"
                       id="rocks">
                     <label class="attractions-item__label" for="rocks">
@@ -234,20 +228,18 @@
                     </label>
                   </li>
                 </ul>
-              </div>
-            </fieldset>
-            <fieldset class="form__item form__item--emotions">
-              <legend class="visually-hidden">Впечатления</legend>
-              <div class="form__container">
+              </fieldset>
+              <fieldset class="form__item form__item--emotions">
+                <legend class="visually-hidden">Впечатления</legend>
                 <h2 class="form__item-title form__item-title--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
                 <textarea class="emotions-textarea" required>Опишите подробно все свои восторги</textarea>
+              </fieldset>
+              <div class="review-wrapper">
+                <a class="review-button" href="#" aria-label="Отправить отзыв">
+                  <span>ОТПРАВИТЬ ОТЗЫВ</span>
+                </a>
+                <p class="required-fields-text">* &mdash; Обязательные поля</p>
               </div>
-            </fieldset>
-            <div class="review-wrapper">
-              <a class="review-button" href="#" aria-label="Отправить отзыв">
-                <span>ОТПРАВИТЬ ОТЗЫВ</span>
-              </a>
-              <p class="required-fields-text">* &mdash; Обязательные поля</p>
             </div>
           </form>
           <div class="popup-failure">

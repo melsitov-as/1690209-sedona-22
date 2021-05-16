@@ -53,7 +53,7 @@
 .logo-wrapper-link {
   display: block;
   text-align: center;
-  margin-bottom: -30px;
+  margin-bottom: -31px;
   position: relative;
   z-index: 3;
 
@@ -95,7 +95,8 @@
 .user-nav {
   position: relative;
   width: 320px;
-  margin: 0 auto -22px;
+  margin: 0 auto -39px;
+  padding-top: 17px;
   display: flex;
   justify-content: flex-end;
   z-index: 4;
@@ -103,6 +104,7 @@
   @media (min-width: @tablet-width) {
     width: 768px;
     margin: 0 auto -41px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -113,7 +115,7 @@
 }
 
 .page-header-inner .user-nav {
-  margin-bottom: -22px;
+  margin-bottom: -40px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: -41px;
@@ -360,18 +362,18 @@
 .image-container {
   position: relative;
   z-index: 2;
-  padding-top: 50px;
+  padding-top: 89px;
   padding-bottom: 85px;
   background: linear-gradient(351deg, @basic-white 26px, transparent 27px),
   linear-gradient(9deg, @basic-white 26px, transparent 27px),
   url("../../img/header-background-mobile.webp") 0 0 no-repeat,
-  @special-blue;
+  @basic-white;
 
   @media (min-resolution: 2dppx) {
        background: linear-gradient(9deg, @basic-white 26px, transparent 27px),
         linear-gradient(351deg, @basic-white 26px, transparent 27px),
         url("../../img/header-background-mobile@2x.webp") 0 56px cover no-repeat,
-        @special-blue;
+        @basic-white;
     }
 
   @media (min-width: @tablet-width) {
@@ -396,9 +398,9 @@
     width: 1200px;
     background: linear-gradient(6deg, @basic-white 60px, transparent 61px),
     linear-gradient(354deg, @basic-white 60px, transparent 61px),
-    url("../../img/header-desktop-background.webp") 0 0 no-repeat;
-    padding-bottom: 91px,
+    url("../../img/header-desktop-background.webp") 0 0 no-repeat,
     @basic-white;
+    padding-bottom: 91px;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(6deg, @basic-white 60px, transparent 61px),
