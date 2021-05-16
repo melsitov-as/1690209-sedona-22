@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -18,14 +18,6 @@
     <div class="page-shadow-wrapper">
       <header class="page-header">
         <div class="page-header__container">
-          <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона">
-            <picture>
-              <source class="page-header__logo-desktop-img" media="(min-width: 1200px)"
-                srcset="img/logotype-desktop.png">
-              <source class="page-header__logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
-              <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона">
-            </picture>
-          </a>
           <nav class="user-nav">
             <button class="user-nav__hamburger-button" aria-label="Открыть меню">
               <svg class="hamburger-button-icon" width="23" height="22" viewBox="0 0 23 22">
@@ -52,16 +44,22 @@
               </button>
             </div>
           </nav>
+          <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона">
+            <picture>
+              <source class="logo-desktop-img" media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+              <source class="logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
+              <img class="logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона">
+            </picture>
+          </a>
+
           <div class="image-container">
-            <img class="page-header__welcome-text" src="img/welcome.png" alt="Welcome" width="115" height="28">
-            <div class="page-header__gorgeous-text-wrapper">
-              <img class="page-header__gorgeous-text" src="img/gorgeous.png" alt="Gorgeous" width="107" height="18">
+            <img class="welcome-text" src="img/welcome.png" alt="Welcome" width="115" height="28">
+            <div class="gorgeous-text-wrapper">
+              <img class="gorgeous-text" src="img/gorgeous.png" alt="Gorgeous" width="107" height="18">
             </div>
-            <img class="page-header__sedona-text-logo" src="img/sedona-text-logo.png" alt="Sedona" width="282"
-              height="49">
-            <div class="page-header__grand-canyon-wrapper">
-              <img class="page-header__grand-canyon-text" src="img/grand-canyon.png" alt="Grand Canyon" width="173"
-                height="46">
+            <img class="sedona-text-logo" src="img/sedona-text-logo.png" alt="Sedona" width="282" height="49">
+            <div class="grand-canyon-wrapper">
+              <img class="grand-canyon-text" src="img/grand-canyon.png" alt="Grand Canyon" width="173" height="46">
             </div>
           </div>
         </div>
@@ -79,7 +77,8 @@
           <ul class="reasons-list">
             <li class="reasons-item">
               <div class="reasons-item__text-wrapper">
-                <h2 class="reasons-item__title">НАСТОЯЩИЙ <br class="reasons-item__title-br-desktop"> ГОРОДОК</h2>
+                <h2 class="reasons-item__title">НАСТОЯЩИЙ <br class="reasons-item__title-br-tablet"><br
+                    class="reasons-item__title-br-desktop"> ГОРОДОК</h2>
                 <p class="reasons-item__num">&mdash; №1 &mdash;</p>
                 <p class="reasons-item__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ <br
                     class="reasons-item__description-br-tablet">
@@ -129,14 +128,16 @@
                   <p class="advantages-description">Всегда заказывайте <br class="advantages-description__br-mobile"><br
                       class="advantages-description__br-tablet">
                     фирменный
-                    бургер, <br class="advantages-description__br-tablet">вы не
+                    бургер, <br class="advantages-description__br-tablet"><br
+                      class="advantages-description__br-desktop">вы не
                     разочаруетесь!</p>
                 </li>
               </ul>
             </li>
             <li class="reasons-item">
               <div class="reasons-item__text-wrapper">
-                <h2 class="reasons-item__title">Там есть <br class="reasons-item__title-br-tablet"> Мост дьявола</h2>
+                <h2 class="reasons-item__title">Там есть <br class="reasons-item__title-br-tablet"><br
+                    class="reasons-item__title-br-desktop"> Мост дьявола</h2>
                 <p class="reasons-item__num">&mdash; №2 &mdash;</p>
                 <p class="reasons-item__description">Да, по нему можно <br class="advantages-description__br-tablet">
                   пройти! <br class="advantages-description__br-desktop">
@@ -153,7 +154,8 @@
               </div>
             </li>
             <li class="reasons-item">
-              <h2 class="reasons-item__title">НЕБОЛЬШАЯ <br class="reasons-item__title-br-tablet"> ПЛОЩАДЬ</h2>
+              <h2 class="reasons-item__title">НЕБОЛЬШАЯ <br class="reasons-item__title-br-tablet"><br
+                  class="reasons-item__title-br-desktop"> ПЛОЩАДЬ</h2>
               <p class="reasons-item__num">&mdash; №3 &mdash;</p>
               <p class="reasons-item__description">Вcе интересные места <br class="reasons-item__description-br-tablet">
                 находятся <br class="reasons-item__description-br-mobile"> очень<br
@@ -162,7 +164,8 @@
               </p>
             </li>
             <li class="reasons-item">
-              <h2 class="reasons-item__title">КРАСИВАЯ <br class="reasons-item__title-br-tablet">ДОРОГА</h2>
+              <h2 class="reasons-item__title">КРАСИВАЯ <br class="reasons-item__title-br-tablet"><br
+                  class="reasons-item__title-br-desktop">ДОРОГА</h2>
               <p class="reasons-item__num">&mdash; №4 &mdash;</p>
               <p class="reasons-item__description">Ехать в Седону из <br class="reasons-item__description-br-tablet">
                 Лас-Вегаса <br class="reasons-item__description-br-mobile"> совсем <br
@@ -171,7 +174,8 @@
               </p>
             </li>
             <li class=" reasons-item">
-              <h2 class="reasons-item__title">МАЛО <br class="reasons-item__title-br-tablet"> ТУРИСТОВ</h2>
+              <h2 class="reasons-item__title">МАЛО <br class="reasons-item__title-br-tablet"><br
+                  class="reasons-item__title-br-desktop"> ТУРИСТОВ</h2>
               <p class="reasons-item__num">&mdash; №5 &mdash;</p>
               <p class="reasons-item__description">Большинство едет в <br class="reasons-item__description-br-tablet">
                 Гранд
@@ -238,7 +242,7 @@
       </footer>
     </div>
   </div>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

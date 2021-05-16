@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -18,44 +18,42 @@
     <div class="page-shadow-wrapper">
       <header class="page-header-inner">
         <div class="page-header-inner__container">
+          <nav class="user-nav">
+            <button class="user-nav__hamburger-button">
+              <svg class="hamburger-button-icon" width="23" height="22" viewBox="0 0 23 22">
+                <use xlink:href="img/sprite.svg#hamburger-icon"></use>
+              </svg>
+            </button>
+            <div class="user-nav__wrapper">
+              <div class="user-nav__item">
+                <a class="user-nav__link" href="index.html">ГЛАВНАЯ</a>
+              </div>
+              <div class="user-nav__item">
+                <a class="user-nav__link" href="#">ФОТО И ВИДЕО</a>
+              </div>
+              <div class="user-nav__item">
+                <a class="user-nav__link" href="#">ФОРМА ОТЗЫВА</a>
+              </div>
+              <div class="user-nav__item">
+                <a class="user-nav__link" href="#">HTML ACADEMY</a>
+              </div>
+              <button class="close-button">
+                <svg class="close-button__img" width="22" height="22" viewBox="0 0 22 22">
+                  <use xlink:href="img/sprite.svg#close-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </nav>
           <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона">
             <picture>
-              <source class="page-header__logo-desktop-img" media="(min-width: 1200px)"
-                srcset="img/logotype-desktop.png">
-              <source class="page-header__logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
-              <img class="page-header__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона">
+              <source class="logo-desktop-img" media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+              <source class="logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
+              <img class="logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона">
             </picture>
           </a>
         </div>
-        <nav class="user-nav">
-          <button class="user-nav__hamburger-button">
-            <svg class="hamburger-button-icon" width="23" height="22" viewBox="0 0 23 22">
-              <use xlink:href="img/sprite.svg#hamburger-icon"></use>
-            </svg>
-          </button>
-          <div class="user-nav__wrapper">
-            <div class="user-nav__item">
-              <a class="user-nav__link" href="index.html">ГЛАВНАЯ</a>
-            </div>
-            <div class="user-nav__item">
-              <a class="user-nav__link" href="#">ФОТО И ВИДЕО</a>
-            </div>
-            <div class="user-nav__item">
-              <a class="user-nav__link" href="#">ФОРМА ОТЗЫВА</a>
-            </div>
-            <div class="user-nav__item">
-              <a class="user-nav__link" href="#">HTML ACADEMY</a>
-            </div>
-            <button class="close-button">
-              <svg class="close-button__img" width="22" height="22" viewBox="0 0 22 22">
-                <use xlink:href="img/sprite.svg#close-icon"></use>
-              </svg>
-            </button>
-          </div>
-        </nav>
         <div class="image-container-inner">
-          <img class="page-header__sedona-text-logo" src="img/sedona-text-logo.png" alt="Sedona" width="282"
-            height="49">
+          <img class="sedona-text-logo" src="img/sedona-text-logo.png" alt="Sedona" width="282" height="49">
         </div>
       </header>
 
@@ -270,7 +268,7 @@
       </footer>
     </div>
   </div>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
