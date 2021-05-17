@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -54,7 +54,9 @@
         </div>
 
         <div class="image-container-inner">
-          <img class="sedona-text-logo" src="img/sedona-text-logo.png" alt="Sedona" width="282" height="49">
+          <svg class="title-text-inner-image" width="229" height="39" viewBox="0 0 229 39">
+            <use xlink:href="img/sprite.svg#sedona-title-text-inner"></use>
+          </svg>
         </div>
       </header>
 
@@ -76,18 +78,20 @@
                 <legend class="visually-hidden">Данные пользователя</legend>
                 <h2 class="form__item-title form__item-title--user-data">ПРЕДСТАВЬТЕСЬ:</h2>
                 <ul class="form__item-user-data-list">
-                  <li class="form__item-user-data-item">
-                    <label class="form__item-label" for="name">ИМЯ*:</label>
-                    <input class="form__item-input" type="text" id="name" name="name" placeholder="Петр">
+                  <li class="form__item-user-data-item form__item-user-data-item--name">
+                    <label class="form__item-label form__item-label--name" for="name">ИМЯ*:</label>
+                    <input class="form__item-input form__item-input--name" type="text" id="name" name="name"
+                      placeholder="Петр">
                   </li>
-                  <li class="form__item-user-data-item">
-                    <label class="form__item-label" for="surname">ФАМИЛИЯ*:</label>
-                    <input class="form__item-input" type="text" id="surname" name="surname" placeholder="Иванов">
+                  <li class="form__item-user-data-item form__item-user-data-item--surname">
+                    <label class="form__item-label form__item-label--surname" for="surname">ФАМИЛИЯ*:</label>
+                    <input class="form__item-input form__item-input--surname" type="text" id="surname" name="surname"
+                      placeholder="Иванов">
                   </li>
-                  <li class="form__item-user-data-item">
-                    <label class="form__item-label" for="patronymic">ОТЧЕСТВО*:</label>
-                    <input class="form__item-input" type="text" id="patronymic" name="patronymic"
-                      placeholder="Александрович">
+                  <li class="form__item-user-data-item form__item-user-data-item--patronymic">
+                    <label class="form__item-label form__item-label--patronymic" for="patronymic">ОТЧЕСТВО*:</label>
+                    <input class="form__item-input form__item-input--patronymic" type="text" id="patronymic"
+                      name="patronymic" placeholder="Александрович">
                   </li>
                 </ul>
               </fieldset>

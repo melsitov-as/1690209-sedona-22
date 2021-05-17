@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -53,14 +53,9 @@
           </a>
 
           <div class="image-container">
-            <img class="welcome-text" src="img/welcome.png" alt="Welcome" width="115" height="28">
-            <div class="gorgeous-text-wrapper">
-              <img class="gorgeous-text" src="img/gorgeous.png" alt="Gorgeous" width="107" height="18">
-            </div>
-            <img class="sedona-text-logo" src="img/sedona-text-logo.png" alt="Sedona" width="282" height="49">
-            <div class="grand-canyon-wrapper">
-              <img class="grand-canyon-text" src="img/grand-canyon.png" alt="Grand Canyon" width="173" height="46">
-            </div>
+            <svg class="title-text-image" width="282" height="214" viewBox="0 0 282 214">
+              <use xlink:href="img/sprite.svg#sedona-title-text"></use>
+            </svg>
           </div>
         </div>
       </header>
@@ -202,7 +197,15 @@
                 class="invitation__description-br-1">
               и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
             <a class="invitation__search-button" href="#" aria-label="Найти гостиницу">
-              <span class="invitation__search-button-text">Найти гостиницу</span></a>
+              <span class="invitation__search-button-text">Найти гостиницу</span>
+            </a>
+          </div>
+          <div class="invitation__map">
+            <picture>
+              <source class="map-image-desktop" media="(min-width: 1200px)" srcset="img/map-desktop.webp">
+              <source class="map-image-tablet" media="(min-width: 768px)" srcset="img/map-tablet.webp">
+              <img class="map-image-mobile" src="img/map-mobile.webp" alt="Карта Седона">
+            </picture>
           </div>
         </section>
       </main>
