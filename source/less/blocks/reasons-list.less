@@ -1,0 +1,18 @@
+.reasons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    grid-column: ~"1/4";
+    grid-row: ~"2/4";
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}

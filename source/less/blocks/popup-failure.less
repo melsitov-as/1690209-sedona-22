@@ -1,0 +1,121 @@
+.popup-failure {
+  display: none;
+  position: absolute;
+  width: 320px;
+  top: 904px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: @basic-white;
+  box-shadow: 0 4px 10px 0 @transparent-black-2;
+  padding-top: 39px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    top: 916px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.popup-failure__title {
+  margin: 0 0 28px 0;
+  padding: 0;
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  font-display: swap;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+.popup-failure__title-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.popup-failure__text {
+  margin: 0 0 23px 0;
+  padding: 0;
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  font-display: swap;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  color: @special-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.popup-failure__text-br-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.popup-failure__text-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.popup-failure__button {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  background-color: @special-blue;
+  text-decoration: none;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+}
+
+.popup-failure__button:hover {
+  background-color: @special-dark-blue;
+}
+
+.popup-failure__button:active span {
+  opacity: 0.3;
+}
+
+.popup-failure__button:disabled {
+  background-color: @grey-disabled;
+}
+
+.popup-failure__button-text {
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @basic-white;
+}

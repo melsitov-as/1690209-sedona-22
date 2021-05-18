@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -26,25 +26,25 @@
             </button>
             <div class="user-nav__wrapper">
               <div class="user-nav__item">
-                <a class="user-nav__link" href="index.html">ГЛАВНАЯ</a>
+                <a class="user-nav__link" href="index.html" tabindex="1">ГЛАВНАЯ</a>
               </div>
               <div class="user-nav__item">
-                <a class="user-nav__link" href="#">ФОТО И ВИДЕО</a>
+                <a class="user-nav__link" href="#" tabindex="2">ФОТО И ВИДЕО</a>
               </div>
               <div class="user-nav__item">
-                <a class="user-nav__link" href="#">ФОРМА ОТЗЫВА</a>
+                <a class="user-nav__link" href="#" tabindex="4">ФОРМА ОТЗЫВА</a>
               </div>
               <div class="user-nav__item">
-                <a class="user-nav__link" href="#">HTML ACADEMY</a>
+                <a class="user-nav__link" href="#" tabindex="5">HTML ACADEMY</a>
               </div>
-              <button class="close-button">
-                <svg class="close-button__img" width="22" height="22" viewBox="0 0 22 22">
+              <button class="user-nav__close-button">
+                <svg class="user-nav__close-button-img" width="22" height="22" viewBox="0 0 22 22">
                   <use xlink:href="img/sprite.svg#close-icon"></use>
                 </svg>
               </button>
             </div>
           </nav>
-          <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона">
+          <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона" tabindex="3">
             <picture>
               <source class="logo-desktop-img" media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
               <source class="logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
@@ -53,8 +53,8 @@
           </a>
         </div>
 
-        <div class="image-container-inner">
-          <svg class="title-text-inner-image" width="229" height="39" viewBox="0 0 229 39">
+        <div class="page-header-inner__image-container">
+          <svg class="page-header-inner__title-text-image" width="229" height="39" viewBox="0 0 229 39">
             <use xlink:href="img/sprite.svg#sedona-title-text-inner"></use>
           </svg>
         </div>
@@ -81,17 +81,17 @@
                   <li class="form__item-user-data-item form__item-user-data-item--name">
                     <label class="form__item-label form__item-label--name" for="name">ИМЯ*:</label>
                     <input class="form__item-input form__item-input--name" type="text" id="name" name="name"
-                      placeholder="Петр">
+                      placeholder="Петр" tabindex="9">
                   </li>
                   <li class="form__item-user-data-item form__item-user-data-item--surname">
                     <label class="form__item-label form__item-label--surname" for="surname">ФАМИЛИЯ*:</label>
                     <input class="form__item-input form__item-input--surname" type="text" id="surname" name="surname"
-                      placeholder="Иванов">
+                      placeholder="Иванов" tabindex="10">
                   </li>
                   <li class="form__item-user-data-item form__item-user-data-item--patronymic">
                     <label class="form__item-label form__item-label--patronymic" for="patronymic">ОТЧЕСТВО*:</label>
                     <input class="form__item-input form__item-input--patronymic" type="text" id="patronymic"
-                      name="patronymic" placeholder="Александрович">
+                      name="patronymic" placeholder="Александрович" tabindex="11">
                   </li>
                 </ul>
               </fieldset>
@@ -101,9 +101,9 @@
                 <ul class="form__user-contacts-list">
                   <li class="form__user-contacts-item">
                     <label class="form__item-label form__item-label--phone" for="phone"><span
-                        class="phone-text">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
+                        class="form__phone-text">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
                     <input class="form__item-input form__item-input--phone" type="text" id="phone" name="phone"
-                      placeholder="Введите телефон">
+                      placeholder="Введите телефон" tabindex="12">
                     <div class="form__user-contacts-icon">
                       <svg width="18" height="18" viewBox="0 0 18 18">
                         <use xlink:href="img/sprite.svg#phone"></use>
@@ -113,7 +113,7 @@
                   <li class="form__user-contacts-item">
                     <label class="form__item-label form__item-label--email" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
                     <input class="form__item-input form__item-input--email" type="text" id="email" name="email"
-                      placeholder="Введите e-mail">
+                      placeholder="Введите e-mail" tabindex="13">
                     <div class="form__user-contacts-icon">
                       <svg width="16" height="12" viewBox="0 0 16 12">
                         <use xlink:href="img/sprite.svg#email"></use>
@@ -125,47 +125,47 @@
               <fieldset class="form__item form__item--impression">
                 <legend class="visually-hidden">Впечатление</legend>
                 <h2 class="form__item-title form__item-title--impression">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
-                <ul class="impression-list">
-                  <li class="impression-item">
-                    <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
+                <ul class="form__impression-list">
+                  <li class="form__impression-item">
+                    <input class="form__impression-item-input-radio visually-hidden" type="radio" name="impression"
                       id="positive" checked>
-                    <label class="impression-item-label" for="positive">
-                      <span class="radio-icon">
+                    <label class="form__impression-item-label" for="positive">
+                      <span class="form__radio-icon" tabindex="6">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
                             fill="#333333" stroke="#333333" stroke-width="3" />
                         </svg>
                       </span>
-                      <span class="impression-item-label-text">Скорее положительное</span>
+                      <span class="form__impression-item-label-text">Скорее положительное</span>
                     </label>
                   </li>
-                  <li class="impression-item">
-                    <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
+                  <li class="form__impression-item">
+                    <input class="form__impression-item-input-radio visually-hidden" type="radio" name="impression"
                       id="negative">
-                    <label class="impression-item-label" for="negative">
-                      <span class="radio-icon">
+                    <label class="form__impression-item-label" for="negative">
+                      <span class="form__radio-icon" tabindex="7">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
                             fill="#333333" stroke="#333333" stroke-width="3" />
                         </svg>
                       </span>
-                      <span class="impression-item-label-text">Скорее отрицательное</span>
+                      <span class="form__impression-item-label-text">Скорее отрицательное</span>
                     </label>
                   </li>
-                  <li class="impression-item">
-                    <input class="impression-item__input-radio visually-hidden" type="radio" name="impression"
+                  <li class="form__impression-item">
+                    <input class="form__impression-item-input-radio visually-hidden" type="radio" name="impression"
                       id="difficult-to-answer">
-                    <label class="impression-item-label" for="difficult-to-answer">
-                      <span class="radio-icon">
+                    <label class="form__impression-item-label" for="difficult-to-answer">
+                      <span class="form__radio-icon" tabindex="8">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z"
                             fill="#333333" stroke="#333333" stroke-width="3" />
                         </svg>
                       </span>
-                      <span class="impression-item-label-text">Затрудняюсь ответить</span>
+                      <span class="form__impression-item-label-text">Затрудняюсь ответить</span>
                     </label>
                   </li>
                 </ul>
@@ -175,61 +175,61 @@
                 <h2 class="form__item-title form__item-title--attractions">ПОСЕЩЕННЫЕ <br
                     class="form__item-title-br-tablet"><br class="form__item-title-br-desktop">ДОСТОПРИМЕЧАТЕЛЬНОСТИ:
                 </h2>
-                <ul class="attractions-list">
-                  <li class="attractions-item attractions-item--bridge">
-                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="bridge"
+                <ul class="form__attractions-list">
+                  <li class="form__attractions-item form__attractions-item--bridge">
+                    <input class="form__attractions-item-input-checkbox visually-hidden" type="checkbox" name="bridge"
                       id="bridge" checked>
-                    <label class="attractions-item__label" for="bridge">
-                      <span class="checkbox-icon">
+                    <label class="form__attractions-item-label" for="bridge">
+                      <span class="form__checkbox-icon" tabindex="14">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
                       </span>
-                      <span class="attractions-item__label-text">Мост Дьявола</span>
+                      <span class="form__attractions-item-label-text">Мост Дьявола</span>
                     </label>
                   </li>
-                  <li class="attractions-item attractions-item--mountain">
-                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="mountain"
+                  <li class="form__attractions-item form__attractions-item--mountain">
+                    <input class="form__attractions-item-input-checkbox visually-hidden" type="checkbox" name="mountain"
                       id="mountain" checked>
-                    <label class="attractions-item__label" for="mountain">
-                      <span class="checkbox-icon">
+                    <label class="form__attractions-item-label" for="mountain">
+                      <span class="form__checkbox-icon" tabindex="15">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
                       </span>
-                      <span class="attractions-item__label-text">Гора-Колокол</span>
+                      <span class="form__attractions-item-label-text">Гора-Колокол</span>
                     </label>
                   </li>
-                  <li class="attractions-item attractions-item--park">
-                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="park"
+                  <li class="form__attractions-item form__attractions-item--park">
+                    <input class="form__attractions-item-input-checkbox visually-hidden" type="checkbox" name="park"
                       id="park" checked>
-                    <label class="attractions-item__label" for="park">
-                      <span class="checkbox-icon">
+                    <label class="form__attractions-item-label" for="park">
+                      <span class="form__checkbox-icon" tabindex="16">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
                       </span>
-                      <span class="attractions-item__label-text">Слайд-парк</span>
+                      <span class="form__attractions-item-label-text">Слайд-парк</span>
                     </label>
                   </li>
-                  <li class="attractions-item attractions-item--rocks">
-                    <input class="attractions-item__input-checkbox visually-hidden" type="checkbox" name="rocks"
+                  <li class="form__attractions-item form__attractions-item--rocks">
+                    <input class="form__attractions-item-input-checkbox visually-hidden" type="checkbox" name="rocks"
                       id="rocks">
-                    <label class="attractions-item__label" for="rocks">
-                      <span class="checkbox-icon">
+                    <label class="form__attractions-item-label" for="rocks">
+                      <span class="form__checkbox-icon" tabindex="17">
                         <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z"
                             fill="black" />
                         </svg>
                       </span>
-                      <span class="attractions-item__label-text">Красные скалы</span>
+                      <span class="form__attractions-item-label-text">Красные скалы</span>
                     </label>
                   </li>
                 </ul>
@@ -237,13 +237,14 @@
               <fieldset class="form__item form__item--emotions">
                 <legend class="visually-hidden">Впечатления</legend>
                 <h2 class="form__item-title form__item-title--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
-                <textarea class="emotions-textarea" required>Опишите подробно все свои восторги</textarea>
+                <textarea class="form__emotions-textarea" tabindex="18"
+                  required>Опишите подробно все свои восторги</textarea>
               </fieldset>
-              <div class="review-wrapper">
-                <a class="review-button" href="#" aria-label="Отправить отзыв">
+              <div class="form__review-wrapper">
+                <a class="form__review-button" href="#" aria-label="Отправить отзыв" tabindex="18">
                   <span>ОТПРАВИТЬ ОТЗЫВ</span>
                 </a>
-                <p class="required-fields-text">* &mdash; Обязательные поля</p>
+                <p class="form__required-fields-text">* &mdash; Обязательные поля</p>
               </div>
             </div>
           </form>
@@ -274,24 +275,24 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__container">
-          <a class="page-footer__link" href="index.html" aria-label="Посетить Седону">#VISITSEDONA</a>
+          <a class="page-footer__link" href="index.html" aria-label="Посетить Седону" tabindex="19">#VISITSEDONA</a>
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="#" aria-label="Twitter">
+              <a class="page-footer__social-link" href="#" aria-label="Twitter" tabindex="20">
                 <svg class="page-footer__social-link-icon" width="18" height="15" viewBox="0 0 18 15">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="#" aria-label="Facebook">
+              <a class="page-footer__social-link" href="#" aria-label="Facebook" tabindex="21">
                 <svg class="page-footer__social-link-icon" width="9" height="19" viewBox="0 0 9 19">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="#" aria-label="Youtube">
+              <a class="page-footer__social-link" href="#" aria-label="Youtube" tabindex="22">
                 <svg class="page-footer__social-link-icon" width="20" height="14" viewBox="0 0 20 14">
                   <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg>
@@ -300,7 +301,7 @@
           </ul>
           <div class="page-footer__copyright">
             <p class="page-footer__copyright-text">РАЗРАБОТАНО</p>
-            <a class="page-footer__copyright-link" href="#" aria-label="HTML Academy">
+            <a class="page-footer__copyright-link" href="#" aria-label="HTML Academy" tabindex="23">
               <svg class="page-footer__copyright-link-icon" width="27" height="35" viewBox="0 0 27 35" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path

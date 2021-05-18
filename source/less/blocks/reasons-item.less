@@ -1,0 +1,329 @@
+.reasons-item--city {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin-bottom: 50px;
+  }
+}
+
+.reasons-item__img-wrapper {
+  overflow: hidden;
+}
+
+.reasons-item--city .reasons-item__text-wrapper {
+  width: 320px;
+  padding: 0 0 37px 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    background-color: @special-blue;
+    width: 256px;
+    padding-top: 41px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-top: 46px;
+    padding-bottom: 54px;
+  }
+}
+
+.reasons-item--city .reasons-item__img-wrapper {
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.reasons-item--bridge {
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.reasons-item--bridge .reasons-item__text-wrapper {
+  width: 320px;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @special-blue;
+    width: 256px;
+    padding-top: 44px;
+    padding-bottom: 40px;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-top: 51px;
+    padding-bottom: 54px;
+  }
+}
+
+.reasons-item--bridge .reasons-item__img-wrapper {
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 256px;
+  }
+}
+
+.reasons-item__description-br-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons-item__description-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons-item__description-br-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.reasons-item__title {
+  margin: 0 0 12px;
+  padding: 0;
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  font-display: swap;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 11px;
+  }
+}
+
+.reasons-item__title-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons-item__title-br-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.reasons-item__num {
+  position: relative;
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-display: swap;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.reasons-item__description {
+  margin: 0;
+  padding: 0;
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  font-display: swap;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-white;
+  letter-spacing: 0.1px;
+}
+
+.reasons-item--area,
+.reasons-item--road,
+.reasons-item--tourists {
+  position: relative;
+  background-color: @special-white;
+}
+
+.reasons-item--area {
+  padding-top: 27px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 44px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-bottom: 62px;
+  }
+}
+
+.reasons-item--road {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 44px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+
+.reasons-item--tourists {
+  padding-top: 20px;
+  padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 44px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.reasons-item--area::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: @special-grey;
+  top: 166px;
+  left: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.reasons-item--road::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: @special-grey;
+  top: 166px;
+  left: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.reasons-item--area .reasons-item__title,
+.reasons-item--area .reasons-item__num,
+.reasons-item--area .reasons-item__description,
+.reasons-item--road .reasons-item__title,
+.reasons-item--road .reasons-item__num,
+.reasons-item--road .reasons-item__description,
+.reasons-item--tourists .reasons-item__title,
+.reasons-item--tourists .reasons-item__num,
+.reasons-item--tourists .reasons-item__description {
+  color: @basic-black;
+}
+
+.reasons-item--area .reasons-item__title {
+  margin-bottom: 14px;
+}
+
+.reasons-item--road .reasons-item__title {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 8px;
+  }
+}
+
+.reasons-item--tourists .reasons-item__title {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 10px;
+  }
+}

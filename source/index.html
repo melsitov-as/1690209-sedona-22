@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon.png">
@@ -20,7 +20,7 @@
         <div class="page-header__container">
           <nav class="user-nav">
             <button class="user-nav__hamburger-button" aria-label="Открыть меню">
-              <svg class="hamburger-button-icon" width="23" height="22" viewBox="0 0 23 22">
+              <svg class="user-nav__hamburger-button-icon" width="23" height="22" viewBox="0 0 23 22">
                 <use xlink:href="img/sprite.svg#hamburger-icon"></use>
               </svg>
             </button>
@@ -37,8 +37,8 @@
               <div class="user-nav__item">
                 <a class="user-nav__link" href="#">HTML ACADEMY</a>
               </div>
-              <button class="close-button" aria-label="Закрыть меню">
-                <svg class="close-button__img" width="22" height="22" viewBox="0 0 22 22">
+              <button class="user-nav__close-button" aria-label="Закрыть меню">
+                <svg class="user-nav__close-button-img" width="22" height="22" viewBox="0 0 22 22">
                   <use xlink:href="img/sprite.svg#close-icon"></use>
                 </svg>
               </button>
@@ -46,14 +46,16 @@
           </nav>
           <a class="logo-wrapper-link" href="index.html" aria-label="Логотип Седона">
             <picture>
-              <source class="logo-desktop-img" media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
-              <source class="logo-tablet-img" media="(min-width: 768px)" srcset="img/logotype-tablet.png">
-              <img class="logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона">
+              <source class="logo-wrapper-link__logo-desktop-img" media="(min-width: 1200px)"
+                srcset="img/logotype-desktop.png">
+              <source class="logo-wrapper-link__logo-tablet-img" media="(min-width: 768px)"
+                srcset="img/logotype-tablet.png">
+              <img class="logo-wrapper-link__logo-mobile-img" src="img/sedona-logotype.png" alt="Логотип Седона">
             </picture>
           </a>
 
-          <div class="image-container">
-            <svg class="title-text-image" width="282" height="214" viewBox="0 0 282 214">
+          <div class="page-header__image-container">
+            <svg class="page-header__title-text-image" width="282" height="214" viewBox="0 0 282 214">
               <use xlink:href="img/sprite.svg#sedona-title-text"></use>
             </svg>
           </div>
@@ -90,47 +92,48 @@
                 </picture>
               </div>
               <ul class="advantages-list">
-                <li class="advantages-item advantages-item--housing">
-                  <div class="advantages-icon-wrapper">
-                    <svg class="advantages-icon" width="39" height="37" viewBox="0 0 39 37">
+                <li class="advantages-list__item advantages-list__item--housing">
+                  <div class="advantages-list__icon-wrapper">
+                    <svg class="advantages-list__icon" width="39" height="37" viewBox="0 0 39 37">
                       <title id="heading-1">Жилье</title>
                       <use xlink:href="img/sprite.svg#house"></use>
                     </svg>
                   </div>
-                  <h3 class="advantages-title">ЖИЛЬЕ</h3>
-                  <p class="advantages-description">Рекомендуем пожить в <br class="advantages-description__br-tablet">
-                    настоящем <br class="advantages-description__br-desktop">
-                    мотеле, все <br class="advantages-description__br-tablet"> как в кино!</p>
+                  <h3 class="advantages-list__title">ЖИЛЬЕ</h3>
+                  <p class="advantages-list__description">Рекомендуем пожить в <br
+                      class="advantages-list__description-br-tablet">
+                    настоящем <br class="advantages-list__description-br-desktop">
+                    мотеле, все <br class="advantages-list__description-br-tablet"> как в кино!</p>
                 </li>
-                <li class="advantages-item advantages-item--souvenirs">
-                  <div class="advantages-icon-wrapper">
-                    <svg class="advantages-icon" width="32" height="38" viewBox="0 0 32 38">
+                <li class="advantages-list__item advantages-list__item--souvenirs">
+                  <div class="advantages-list__icon-wrapper">
+                    <svg class="advantages-list__icon" width="32" height="38" viewBox="0 0 32 38">
                       <title id="heading-2">Сувениры</title>
                       <use xlink:href="img/sprite.svg#souvenir"></use>
                     </svg>
                   </div>
-                  <h3 class="advantages-title">СУВЕНИРЫ</h3>
-                  <p class="advantages-description">Не только китайского, <br
-                      class="advantages-description__br-desktop">
+                  <h3 class="advantages-list__title">СУВЕНИРЫ</h3>
+                  <p class="advantages-list__description">Не только китайского, <br
+                      class="advantages-list__description-br-desktop">
                     но
-                    <br class="advantages-description__br-tablet">
+                    <br class="advantages-list__description-br-tablet">
                     и
                     местного производства!
                   </p>
                 </li>
-                <li class="advantages-item advantages-item--food">
-                  <div class="advantages-icon-wrapper">
-                    <svg class="advantages-icon" width="40" height="35" viewBox="0 0 40 35">
+                <li class="advantages-list__item advantages-list__item--food">
+                  <div class="advantages-list__icon-wrapper">
+                    <svg class="advantages-list__icon" width="40" height="35" viewBox="0 0 40 35">
                       <title id="heading-3">Еда</title>
                       <use xlink:href="img/sprite.svg#burger"></use>
                     </svg>
                   </div>
-                  <h3 class="advantages-title">ЕДА</h3>
-                  <p class="advantages-description">Всегда заказывайте <br class="advantages-description__br-mobile"><br
-                      class="advantages-description__br-tablet">
+                  <h3 class="advantages-list__title">ЕДА</h3>
+                  <p class="advantages-list__description">Всегда заказывайте <br
+                      class="advantages-description__br-mobile"><br class="advantages-list__description-br-tablet">
                     фирменный
-                    бургер, <br class="advantages-description__br-tablet"><br
-                      class="advantages-description__br-desktop">вы не
+                    бургер, <br class="advantages-list__description-br-tablet"><br
+                      class="advantages-list__description-br-desktop">вы не
                     разочаруетесь!</p>
                 </li>
               </ul>
@@ -140,9 +143,9 @@
                 <h2 class="reasons-item__title">Там есть <br class="reasons-item__title-br-tablet"><br
                     class="reasons-item__title-br-desktop"> Мост дьявола</h2>
                 <p class="reasons-item__num">&mdash; №2 &mdash;</p>
-                <p class="reasons-item__description">Да, по нему можно <br class="advantages-description__br-tablet">
-                  пройти! <br class="advantages-description__br-desktop">
-                  Если вы <br class="advantages-description__br-tablet"> осмелитесь, конечно</p>
+                <p class="reasons-item__description">Да, по нему можно <br class="reasons-item__description-br-tablet">
+                  пройти! <br class="reasons-item__description-br-desktop">
+                  Если вы <br class="reasons-item__description-br-tablet"> осмелитесь, конечно</p>
               </div>
               <div class="reasons-item__img-wrapper">
                 <picture>
@@ -202,9 +205,9 @@
           </div>
           <div class="invitation__map">
             <picture>
-              <source class="map-image-desktop" media="(min-width: 1200px)" srcset="img/map-desktop.webp">
-              <source class="map-image-tablet" media="(min-width: 768px)" srcset="img/map-tablet.webp">
-              <img class="map-image-mobile" src="img/map-mobile.webp" alt="Карта Седона">
+              <source class="invitation__map-image-desktop" media="(min-width: 1200px)" srcset="img/map-desktop.webp">
+              <source class="invitation__map-image-tablet" media="(min-width: 768px)" srcset="img/map-tablet.webp">
+              <img class="invitation__map-image-mobile" src="img/map-mobile.webp" alt="Карта Седона">
             </picture>
           </div>
         </section>

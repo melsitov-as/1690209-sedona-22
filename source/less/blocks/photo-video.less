@@ -369,7 +369,7 @@
   }
 }
 
-.video-items-wrapper {
+.photo-video__video-items-wrapper {
   width: 320px;
   margin: 0 auto;
 
@@ -382,7 +382,7 @@
   }
 }
 
-.video-picture-wrapper {
+.photo-video__video-picture-wrapper {
   position: relative;
   width: 320px;
   height: 201px;
@@ -402,7 +402,7 @@
   }
 }
 
-.video-length-menu {
+.photo-video__video-length-menu {
   position: relative;
   margin: 0 auto;
   width: 280px;
@@ -425,7 +425,7 @@
   }
 }
 
-.video-line {
+.photo-video__video-line {
   position: relative;
   width: 235px;
   height: 3px;
@@ -441,7 +441,7 @@
   }
 }
 
-.video-line-handler {
+.photo-video__video-line-handler {
   position: absolute;
   width: 9px;
   height: 9px;
@@ -455,7 +455,7 @@
   }
 }
 
-.video-menu {
+.photo-video__video-menu {
   position: relative;
   margin: 0 auto;
   width: 280px;
@@ -477,7 +477,7 @@
   }
 }
 
-.replay-button {
+.photo-video__replay-button {
   border: none;
   background-color: transparent;
   margin-left: 20px;
@@ -488,7 +488,7 @@
   }
 }
 
-.replay-button path {
+.photo-video__replay-button path {
   fill: @button-grey;
 
   @media (min-width: @tablet-width) {
@@ -496,7 +496,7 @@
   }
 }
 
-.subtitles-button {
+.photo-video__subtitles-button {
   border: none;
   background-color: transparent;
   margin-left: 120px;
@@ -511,7 +511,7 @@
   }
 }
 
-.subtitles-button path {
+.photo-video__subtitles-button path {
   fill: @button-grey;
 
   @media (min-width: @tablet-width) {
@@ -519,14 +519,14 @@
   }
 }
 
-.fullscreen-button {
+.photo-video__fullscreen-button {
   border: none;
   background-color: transparent;
   margin-left: 20px;
   outline: none;
 }
 
-.fullscreen-button path {
+.photo-video__fullscreen-button path {
   fill: @button-grey;
 
   @media (min-width: @tablet-width) {
@@ -534,9 +534,9 @@
   }
 }
 
-.replay-button:hover path,
-.subtitles-button:hover path,
-.fullscreen-button:hover path {
+.photo-video__replay-button:hover path,
+.photo-video__subtitles-button:hover path,
+.photo-video__fullscreen-button:hover path {
   fill: @special-black;
 
   @media (min-width: @tablet-width) {
@@ -545,9 +545,21 @@
   }
 }
 
-.replay-button:active path,
-.subtitles-button:active path,
-.fullscreen-button:active path {
+.photo-video__replay-button:active path,
+.photo-video__subtitles-button:active path,
+.photo-video__fullscreen-button:active path {
+  fill: @special-black;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    fill: @basic-white;
+    opacity: 0.3;
+  }
+}
+
+.photo-video__replay-button:focus path,
+.photo-video__subtitles-button:focus path,
+.photo-video__fullscreen-button:focus path {
   fill: @special-black;
   opacity: 0.3;
 

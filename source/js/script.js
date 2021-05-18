@@ -1,7 +1,7 @@
 let userNav = document.querySelector(".user-nav ");
 let mobileMenu = document.querySelector(".user-nav__wrapper");
 let hamburgerButton = document.querySelector(".user-nav__hamburger-button");
-let closeButton = mobileMenu.querySelector(".close-button");
+let closeButton = mobileMenu.querySelector(".user-nav__close-button");
 
 
 

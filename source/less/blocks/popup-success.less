@@ -1,0 +1,121 @@
+.popup-success {
+  display: none;
+  position: absolute;
+  width: 320px;
+  top: 1230px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-image: linear-gradient(to bottom, @basic-white 225px, @input-grey 225px);
+  box-shadow: 0 4px 10px 0 @transparent-black-2;
+  padding-top: 39px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 757px;
+    width: 640px;
+    padding-top: 50px;
+    padding-bottom: 42px;
+    background-image: linear-gradient(to bottom, @basic-white 200px, @input-grey 200px);
+  }
+}
+
+.popup-success__title {
+  margin: 0 0 28px 0;
+  padding: 0;
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  font-display: swap;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+}
+
+.popup-success__text {
+  margin: 0 0 58px 0;
+  padding: 0;
+  text-align: center;
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  font-display: swap;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  color: @special-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 86px;
+  }
+}
+
+.popup-success__text-br-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.popup-success__text-br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.popup-success__button {
+  width: 282px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  background-color: @special-blue;
+  text-decoration: none;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
+}
+
+.popup-success__button-text {
+  font-family: @ptsans, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  font-display: swap;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.popup-success__button:hover {
+  background-color: @special-dark-blue;
+}
+
+.popup-success__button:active span {
+  opacity: 0.3;
+}
+
+.popup-success__button:disabled {
+  background-color: @grey-disabled;
+}
+
+.active {
+  display: block;
+}
