@@ -278,7 +278,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--phone {
     padding-top: 16px;
     padding-left: 22px;
@@ -304,7 +304,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--email {
     padding-top: 16px;
     padding-left: 22px;
@@ -317,7 +317,21 @@
   background-color: @grey-disabled;
 }
 
-.form__item-input--phone:active,
+.form__item-input--phone:active {
+  border: 4px solid @grey-disabled;
+  background-color: @basic-white;
+  width: 193px;
+  padding-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 561px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 228px;
+  }
+}
+
 .form__item-input--email:active {
   border: 4px solid @grey-disabled;
   background-color: @basic-white;
@@ -327,9 +341,27 @@
   @media (min-width: @tablet-width) {
     width: 561px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+  }
 }
 
-.form__item-input--phone:focus,
+.form__item-input--phone:focus {
+  border: 4px solid @grey-disabled;
+  background-color: @basic-white;
+  width: 193px;
+  padding-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 561px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 228px;
+  }
+}
+
 .form__item-input--email:focus {
   border: 4px solid @grey-disabled;
   background-color: @basic-white;
@@ -339,45 +371,13 @@
   @media (min-width: @tablet-width) {
     width: 561px;
   }
-}
 
-.form__item-input--phone:active {
   @media (min-width: @desktop-width) {
-    width: 228px;
+    width: 230px;
   }
 }
 
-.form__item-input--phone:focus {
-  @media (min-width: @desktop-width) {
-    width: 228px;
-  }
-}
-
-.form__item-input--phone:focus,
-.form__item-input--email:focus {
-  border: 4px solid @grey-disabled;
-  background-color: @basic-white;
-  width: 193px;
-  padding-left: 19px;
-
-  @media (min-width: @tablet-width) {
-    width: 561px;
-  }
-}
-
-.form__item-input--phone:active {
-  @media (min-width: @desktop-width) {
-    width: 228px;
-  }
-}
-
-.form__item-input--phone:focus {
-  @media (min-width: @desktop-width) {
-    width: 228px;
-  }
-}
-
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--phone:active {
     padding-top: 12px;
     padding-bottom: 16px;
@@ -397,7 +397,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--phone:focus {
     padding-top: 12px;
     padding-bottom: 16px;
@@ -417,19 +417,7 @@
   }
 }
 
-.form__item-input--email:active {
-  @media (min-width: @desktop-width) {
-    width: 230px;
-  }
-}
-
-.form__item-input--email:focus {
-  @media (min-width: @desktop-width) {
-    width: 230px;
-  }
-}
-
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--email:active {
     padding-top: 12px;
     padding-bottom: 16px;
@@ -449,7 +437,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--email:focus {
     padding-top: 12px;
     padding-bottom: 16px;
@@ -520,7 +508,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--name {
     padding-top: 20px;
     padding-left: 22px;
@@ -547,7 +535,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--surname {
     padding-top: 20px;
     padding-left: 22px;
@@ -575,7 +563,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--patronymic {
     padding-top: 20px;
     padding-left: 20px;
@@ -625,7 +613,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--name:active {
     padding-top: 16px;
     padding-bottom: 26px;
@@ -644,7 +632,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--name:focus {
     padding-top: 16px;
     padding-bottom: 26px;
@@ -697,7 +685,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--surname:active {
     padding-top: 16px;
     padding-bottom: 26px;
@@ -718,7 +706,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--surname:focus {
     padding-top: 16px;
     padding-bottom: 26px;
@@ -775,7 +763,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--patronymic:active {
     padding-top: 16px;
     padding-bottom: 26px;
@@ -794,7 +782,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .form__item-input--patronymic:focus {
     padding-top: 16px;
     padding-bottom: 26px;
@@ -1321,5 +1309,3 @@
     margin-top: 18px;
   }
 }
-
-
