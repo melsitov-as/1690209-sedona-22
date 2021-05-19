@@ -927,8 +927,8 @@
   border-color: @dark-grey;
 }
 
-.form__impression-item-label:focus .form__radio-icon {
-  border-color: @dark-grey;
+.form__impression-item-input-radio:focus + .form__impression-item-label .form__radio-icon {
+  outline: 3px solid @basic-black;
 }
 
 .form__impression-item-label:active svg {
@@ -939,6 +939,9 @@
   opacity: 0.3;
 }
 
+.form__impression-item-input-radio:disabled + .form__impression-item-label {
+  opacity: 0.3;
+}
 
 .form__item--attractions {
   padding-top: 16px;
@@ -1117,6 +1120,10 @@
   display: block;
 }
 
+.form__attractions-item-input-checkbox:disabled + .form__attractions-item-label {
+  opacity: 0.3;
+}
+
 .form__attractions-item-label:hover .form__checkbox-icon {
   background-color: @grey-disabled;
 }
@@ -1125,9 +1132,10 @@
   background-color: @dark-grey;
 }
 
-.form__attractions-item-label:focus .form__checkbox-icon {
-  background-color: @dark-grey;
+.form__attractions-item-input-checkbox:focus + .form__attractions-item-label .form__checkbox-icon {
+  outline: 3px solid @basic-black;
 }
+
 
 .form__attractions-item-label:active svg {
   opacity: 0.3;
